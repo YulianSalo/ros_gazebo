@@ -1,0 +1,33 @@
+In file included from [01m[K/root/data/project_ws/src/hardware_link2/src/hardware_link2.cpp:20[m[K:
+[01m[K/root/data/project_ws/src/hardware_link2/include/hardware_link2/hardware_link2.hpp:40:3:[m[K [01;31m[Kerror: [m[Kreturn type specification for constructor invalid
+   40 |   [01;31m[Kvoid[m[K Wheel() {
+      |   [01;31m[K^~~~[m[K
+[01m[K/root/data/project_ws/src/hardware_link2/include/hardware_link2/hardware_link2.hpp:46:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+   46 | }
+      |  [01;31m[K^[m[K
+      |  [32m[K;[m[K
+[01m[K/root/data/project_ws/src/hardware_link2/include/hardware_link2/hardware_link2.hpp:[m[K In constructor ‘[01m[Khardware_link2::Wheel::Wheel()[m[K’:
+[01m[K/root/data/project_ws/src/hardware_link2/include/hardware_link2/hardware_link2.hpp:41:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kinfo_[m[K’ was not declared in this scope
+   41 |       state_vel.resize([01;31m[Kinfo_[m[K.joints.size(), std::numeric_limits<double>::quiet_NaN());
+      |                        [01;31m[K^~~~~[m[K
+[01m[K/root/data/project_ws/src/hardware_link2/src/hardware_link2.cpp:[m[K In member function ‘[01m[Kvirtual std::vector<hardware_interface::StateInterface> hardware_link2::HardwareLinkInterface::export_state_interfaces()[m[K’:
+[01m[K/root/data/project_ws/src/hardware_link2/src/hardware_link2.cpp:57:68:[m[K [01;31m[Kerror: [m[K‘[01m[Kwheel[m[K’ was not declared in this scope; did you mean ‘[01m[KWheel[m[K’?
+   57 |         info_.joints[i].name, hardware_interface::HW_IF_POSITION, &[01;31m[Kwheel[m[K[0].state_pos));
+      |                                                                    [01;31m[K^~~~~[m[K
+      |                                                                    [32m[KWheel[m[K
+[01m[K/root/data/project_ws/src/hardware_link2/src/hardware_link2.cpp:64:68:[m[K [01;31m[Kerror: [m[K‘[01m[Kwheel[m[K’ was not declared in this scope; did you mean ‘[01m[KWheel[m[K’?
+   64 |         info_.joints[i].name, hardware_interface::HW_IF_POSITION, &[01;31m[Kwheel[m[K[1].state_pos));
+      |                                                                    [01;31m[K^~~~~[m[K
+      |                                                                    [32m[KWheel[m[K
+[01m[K/root/data/project_ws/src/hardware_link2/src/hardware_link2.cpp:[m[K In member function ‘[01m[Kvirtual std::vector<hardware_interface::CommandInterface> hardware_link2::HardwareLinkInterface::export_command_interfaces()[m[K’:
+[01m[K/root/data/project_ws/src/hardware_link2/src/hardware_link2.cpp:82:68:[m[K [01;31m[Kerror: [m[K‘[01m[Kwheel[m[K’ was not declared in this scope; did you mean ‘[01m[KWheel[m[K’?
+   82 |         info_.joints[i].name, hardware_interface::HW_IF_VELOCITY, &[01;31m[Kwheel[m[K[0].cmd_vel));
+      |                                                                    [01;31m[K^~~~~[m[K
+      |                                                                    [32m[KWheel[m[K
+[01m[K/root/data/project_ws/src/hardware_link2/src/hardware_link2.cpp:87:68:[m[K [01;31m[Kerror: [m[K‘[01m[Kwheel[m[K’ was not declared in this scope; did you mean ‘[01m[KWheel[m[K’?
+   87 |         info_.joints[i].name, hardware_interface::HW_IF_VELOCITY, &[01;31m[Kwheel[m[K[1].cmd_vel));
+      |                                                                    [01;31m[K^~~~~[m[K
+      |                                                                    [32m[KWheel[m[K
+gmake[2]: *** [CMakeFiles/hardware_link2.dir/build.make:76: CMakeFiles/hardware_link2.dir/src/hardware_link2.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:176: CMakeFiles/hardware_link2.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

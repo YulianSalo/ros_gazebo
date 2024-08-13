@@ -1,0 +1,57 @@
+[0.029s] Invoking command in '/root/data/project_ws/build/ros_gz_example_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/data/project_ws/src/ros_gz_example_description -DBUILD_TESTING=ON -DCMAKE_INSTALL_PREFIX=/root/data/project_ws/install/ros_gz_example_description
+[0.402s] -- The C compiler identification is GNU 11.4.0
+[0.403s] -- The CXX compiler identification is GNU 11.4.0
+[0.403s] -- Detecting C compiler ABI info
+[0.403s] -- Detecting C compiler ABI info - done
+[0.403s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.403s] -- Detecting C compile features
+[0.403s] -- Detecting C compile features - done
+[0.403s] -- Detecting CXX compiler ABI info
+[0.570s] -- Detecting CXX compiler ABI info - done
+[0.581s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.582s] -- Detecting CXX compile features
+[0.582s] -- Detecting CXX compile features - done
+[0.592s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.839s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.049s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.171s] -- Configuring done
+[1.183s] -- Generating done
+[1.190s] -- Build files have been written to: /root/data/project_ws/build/ros_gz_example_description
+[1.201s] Invoked command in '/root/data/project_ws/build/ros_gz_example_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/data/project_ws/src/ros_gz_example_description -DBUILD_TESTING=ON -DCMAKE_INSTALL_PREFIX=/root/data/project_ws/install/ros_gz_example_description
+[1.201s] Invoking command in '/root/data/project_ws/build/ros_gz_example_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/data/project_ws/build/ros_gz_example_description -- -j4 -l4
+[1.282s] Invoked command in '/root/data/project_ws/build/ros_gz_example_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/data/project_ws/build/ros_gz_example_description -- -j4 -l4
+[1.365s] Invoking command in '/root/data/project_ws/build/ros_gz_example_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/data/project_ws/build/ros_gz_example_description
+[1.375s] -- Install configuration: ""
+[1.375s] -- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/models
+[1.375s] -- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/models/diff_drive_urdf
+[1.376s] -- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/models/diff_drive_urdf/model.urdf
+[1.376s] -- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/models/diff_drive_sdf
+[1.376s] -- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/models/diff_drive_sdf/model.sdf
+[1.377s] -- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/models/diff_drive_sdf/model.config
+[1.377s] -- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/models/rrbot
+[1.377s] -- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/models/rrbot/model.sdf
+[1.378s] -- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/models/turtlebot3_world
+[1.378s] -- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/models/turtlebot3_world/meshes
+[1.379s] -- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/models/turtlebot3_world/meshes/hexagon.dae
+[1.379s] -- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/models/turtlebot3_world/meshes/wall.dae
+[1.379s] -- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/models/turtlebot3_world/model-1_4.sdf
+[1.379s] -- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/models/turtlebot3_world/model.sdf
+[1.379s] -- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/models/turtlebot3_world/model.config
+[1.380s] -- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/environment/ros_gz_example_description.dsv
+[1.380s] -- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/environment/ros_gz_example_description.sh
+[1.383s] -- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ament_index/resource_index/package_run_dependencies/ros_gz_example_description
+[1.383s] -- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ament_index/resource_index/parent_prefix_path/ros_gz_example_description
+[1.383s] -- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/environment/ament_prefix_path.sh
+[1.383s] -- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/environment/ament_prefix_path.dsv
+[1.383s] -- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/environment/path.sh
+[1.383s] -- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/environment/path.dsv
+[1.383s] -- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/local_setup.bash
+[1.383s] -- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/local_setup.sh
+[1.384s] -- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/local_setup.zsh
+[1.384s] -- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/local_setup.dsv
+[1.384s] -- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/package.dsv
+[1.384s] -- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ament_index/resource_index/packages/ros_gz_example_description
+[1.384s] -- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/cmake/ros_gz_example_descriptionConfig.cmake
+[1.384s] -- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/cmake/ros_gz_example_descriptionConfig-version.cmake
+[1.385s] -- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/package.xml
+[1.389s] Invoked command in '/root/data/project_ws/build/ros_gz_example_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/data/project_ws/build/ros_gz_example_description

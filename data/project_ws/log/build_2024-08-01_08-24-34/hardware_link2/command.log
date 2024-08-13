@@ -1,0 +1,2 @@
+Invoking command in '/root/data/project_ws/build/hardware_link2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/data/project_ws/build/hardware_link2 -- -j4 -l4
+Invoked command in '/root/data/project_ws/build/hardware_link2' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/data/project_ws/build/hardware_link2 -- -j4 -l4

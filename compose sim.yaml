@@ -1,0 +1,14 @@
+#xhost +local:
+
+services:
+  ros2_gazebo:
+    build: .
+    privileged: true
+    entrypoint: "terminator"
+    network_mode: host  
+    environment:
+      - IS_SIM
+      - DISPLAY
+    volumes:
+      - ./data:/root/data
+      - /dev/input:/dev/input

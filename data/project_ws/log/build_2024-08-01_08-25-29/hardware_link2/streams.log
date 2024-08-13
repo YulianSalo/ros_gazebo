@@ -1,0 +1,228 @@
+[0.082s] Invoking command in '/root/data/project_ws/build/hardware_link2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/data/project_ws/build/hardware_link2 -- -j4 -l4
+[0.436s] [35m[1mConsolidate compiler generated dependencies of target hardware_link2[0m
+[0.436s] [ 22%] Built target gmock_main
+[0.436s] [ 55%] Built target gmock
+[0.436s] [ 66%] [32mBuilding CXX object CMakeFiles/hardware_link2.dir/src/hardware_link2.cpp.o[0m
+[0.436s] [ 88%] Built target test_hardware_link2
+[1.437s] In file included from [01m[K/root/data/project_ws/src/hardware_link2/src/hardware_link2.cpp:20[m[K:
+[1.437s] [01m[K/root/data/project_ws/src/hardware_link2/include/hardware_link2/hardware_link2.hpp:40:3:[m[K [01;31m[Kerror: [m[Kreturn type specification for constructor invalid
+[1.437s]    40 |   [01;31m[Kvoid[m[K Wheel() {
+[1.437s]       |   [01;31m[K^~~~[m[K
+[1.441s] [01m[K/root/data/project_ws/src/hardware_link2/include/hardware_link2/hardware_link2.hpp:46:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+[1.444s]    46 | }
+[1.445s]       |  [01;31m[K^[m[K
+[1.445s]       |  [32m[K;[m[K
+[1.445s] [01m[K/root/data/project_ws/src/hardware_link2/include/hardware_link2/hardware_link2.hpp:[m[K In constructor ‘[01m[Khardware_link2::Wheel::Wheel()[m[K’:
+[1.445s] [01m[K/root/data/project_ws/src/hardware_link2/include/hardware_link2/hardware_link2.hpp:41:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kinfo_[m[K’ was not declared in this scope
+[1.445s]    41 |       state_vel.resize([01;31m[Kinfo_[m[K.joints.size(), std::numeric_limits<double>::quiet_NaN());
+[1.445s]       |                        [01;31m[K^~~~~[m[K
+[3.617s] [01m[K/root/data/project_ws/src/hardware_link2/src/hardware_link2.cpp:[m[K In member function ‘[01m[Kvirtual std::vector<hardware_interface::StateInterface> hardware_link2::HardwareLinkInterface::export_state_interfaces()[m[K’:
+[3.618s] [01m[K/root/data/project_ws/src/hardware_link2/src/hardware_link2.cpp:57:78:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass hardware_link2::Wheel[m[K’ has no member named ‘[01m[Kstate_pos[m[K’; did you mean ‘[01m[Kstete_pos[m[K’?
+[3.618s]    57 |         info_.joints[i].name, hardware_interface::HW_IF_POSITION, &wheels[0].[01;31m[Kstate_pos[m[K));
+[3.618s]       |                                                                              [01;31m[K^~~~~~~~~[m[K
+[3.618s]       |                                                                              [32m[Kstete_pos[m[K
+[3.618s] [01m[K/root/data/project_ws/src/hardware_link2/src/hardware_link2.cpp:59:87:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Khardware_interface::StateInterface::StateInterface(std::string&, const char [9], std::vector<double>*)[m[K’
+[3.618s]    59 |         info_.joints[i].name, hardware_interface::HW_IF_VELOCITY, &wheels[0].state_vel[01;31m[K)[m[K);
+[3.618s]       |                                                                                       [01;31m[K^[m[K
+[3.618s] In file included from [01m[K/opt/ros/humble/include/hardware_interface/system_interface.hpp:22[m[K,
+[3.619s]                  from [01m[K/root/data/project_ws/src/hardware_link2/include/hardware_link2/hardware_link2.hpp:23[m[K,
+[3.619s]                  from [01m[K/root/data/project_ws/src/hardware_link2/src/hardware_link2.cpp:20[m[K:
+[3.619s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:30:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Khardware_interface::ReadOnlyHandle::ReadOnlyHandle(const string&, const string&, double*)[m[K’
+[3.619s]    30 |   [01;36m[KReadOnlyHandle[m[K(
+[3.619s]       |   [01;36m[K^~~~~~~~~~~~~~[m[K
+[3.619s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:123:25:[m[K [01;36m[Knote: [m[K  inherited here
+[3.619s]   123 |   using ReadOnlyHandle::[01;36m[KReadOnlyHandle[m[K;
+[3.619s]       |                         [01;36m[K^~~~~~~~~~~~~~[m[K
+[3.619s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:32:14:[m[K [01;36m[Knote: [m[K  no known conversion for argument 3 from ‘[01m[Kstd::vector<double>*[m[K’ to ‘[01m[Kdouble*[m[K’
+[3.619s]    32 |     [01;36m[Kdouble * value_ptr = nullptr[m[K)
+[3.619s]       |     [01;36m[K~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[3.619s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:37:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Khardware_interface::ReadOnlyHandle::ReadOnlyHandle(const string&)[m[K’
+[3.619s]    37 |   explicit [01;36m[KReadOnlyHandle[m[K(const std::string & interface_name)
+[3.620s]       |            [01;36m[K^~~~~~~~~~~~~~[m[K
+[3.620s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:123:25:[m[K [01;36m[Knote: [m[K  inherited here
+[3.620s]   123 |   using ReadOnlyHandle::[01;36m[KReadOnlyHandle[m[K;
+[3.620s]       |                         [01;36m[K^~~~~~~~~~~~~~[m[K
+[3.620s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:123:25:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[3.620s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:42:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Khardware_interface::ReadOnlyHandle::ReadOnlyHandle(const char*)[m[K’
+[3.620s]    42 |   explicit [01;36m[KReadOnlyHandle[m[K(const char * interface_name)
+[3.620s]       |            [01;36m[K^~~~~~~~~~~~~~[m[K
+[3.620s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:123:25:[m[K [01;36m[Knote: [m[K  inherited here
+[3.620s]   123 |   using ReadOnlyHandle::[01;36m[KReadOnlyHandle[m[K;
+[3.620s]       |                         [01;36m[K^~~~~~~~~~~~~~[m[K
+[3.620s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:123:25:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[3.620s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:47:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Khardware_interface::ReadOnlyHandle::ReadOnlyHandle(const hardware_interface::ReadOnlyHandle&)[m[K’
+[3.621s]    47 |   [01;36m[KReadOnlyHandle[m[K(const ReadOnlyHandle & other) = default;
+[3.621s]       |   [01;36m[K^~~~~~~~~~~~~~[m[K
+[3.621s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:123:25:[m[K [01;36m[Knote: [m[K  inherited here
+[3.621s]   123 |   using ReadOnlyHandle::[01;36m[KReadOnlyHandle[m[K;
+[3.621s]       |                         [01;36m[K^~~~~~~~~~~~~~[m[K
+[3.621s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:123:25:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[3.621s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:49:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Khardware_interface::ReadOnlyHandle::ReadOnlyHandle(hardware_interface::ReadOnlyHandle&&)[m[K’
+[3.621s]    49 |   [01;36m[KReadOnlyHandle[m[K(ReadOnlyHandle && other) = default;
+[3.621s]       |   [01;36m[K^~~~~~~~~~~~~~[m[K
+[3.621s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:123:25:[m[K [01;36m[Knote: [m[K  inherited here
+[3.621s]   123 |   using ReadOnlyHandle::[01;36m[KReadOnlyHandle[m[K;
+[3.621s]       |                         [01;36m[K^~~~~~~~~~~~~~[m[K
+[3.621s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:123:25:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[3.622s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:121:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Khardware_interface::StateInterface::StateInterface(hardware_interface::StateInterface&&)[m[K’
+[3.622s]   121 |   [01;36m[KStateInterface[m[K(StateInterface && other) = default;
+[3.622s]       |   [01;36m[K^~~~~~~~~~~~~~[m[K
+[3.622s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:121:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[3.622s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:119:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Khardware_interface::StateInterface::StateInterface(const hardware_interface::StateInterface&)[m[K’
+[3.622s]   119 |   [01;36m[KStateInterface[m[K(const StateInterface & other) = default;
+[3.622s]       |   [01;36m[K^~~~~~~~~~~~~~[m[K
+[3.622s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:119:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[3.622s] [01m[K/root/data/project_ws/src/hardware_link2/src/hardware_link2.cpp:64:78:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass hardware_link2::Wheel[m[K’ has no member named ‘[01m[Kstate_pos[m[K’; did you mean ‘[01m[Kstete_pos[m[K’?
+[3.627s]    64 |         info_.joints[i].name, hardware_interface::HW_IF_POSITION, &wheels[1].[01;31m[Kstate_pos[m[K));
+[3.627s]       |                                                                              [01;31m[K^~~~~~~~~[m[K
+[3.627s]       |                                                                              [32m[Kstete_pos[m[K
+[3.627s] [01m[K/root/data/project_ws/src/hardware_link2/src/hardware_link2.cpp:66:87:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Khardware_interface::StateInterface::StateInterface(std::string&, const char [9], std::vector<double>*)[m[K’
+[3.627s]    66 |         info_.joints[i].name, hardware_interface::HW_IF_VELOCITY, &wheels[1].state_vel[01;31m[K)[m[K);
+[3.627s]       |                                                                                       [01;31m[K^[m[K
+[3.627s] In file included from [01m[K/opt/ros/humble/include/hardware_interface/system_interface.hpp:22[m[K,
+[3.627s]                  from [01m[K/root/data/project_ws/src/hardware_link2/include/hardware_link2/hardware_link2.hpp:23[m[K,
+[3.627s]                  from [01m[K/root/data/project_ws/src/hardware_link2/src/hardware_link2.cpp:20[m[K:
+[3.628s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:30:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Khardware_interface::ReadOnlyHandle::ReadOnlyHandle(const string&, const string&, double*)[m[K’
+[3.628s]    30 |   [01;36m[KReadOnlyHandle[m[K(
+[3.628s]       |   [01;36m[K^~~~~~~~~~~~~~[m[K
+[3.628s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:123:25:[m[K [01;36m[Knote: [m[K  inherited here
+[3.628s]   123 |   using ReadOnlyHandle::[01;36m[KReadOnlyHandle[m[K;
+[3.628s]       |                         [01;36m[K^~~~~~~~~~~~~~[m[K
+[3.628s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:32:14:[m[K [01;36m[Knote: [m[K  no known conversion for argument 3 from ‘[01m[Kstd::vector<double>*[m[K’ to ‘[01m[Kdouble*[m[K’
+[3.628s]    32 |     [01;36m[Kdouble * value_ptr = nullptr[m[K)
+[3.628s]       |     [01;36m[K~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[3.628s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:37:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Khardware_interface::ReadOnlyHandle::ReadOnlyHandle(const string&)[m[K’
+[3.628s]    37 |   explicit [01;36m[KReadOnlyHandle[m[K(const std::string & interface_name)
+[3.628s]       |            [01;36m[K^~~~~~~~~~~~~~[m[K
+[3.629s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:123:25:[m[K [01;36m[Knote: [m[K  inherited here
+[3.629s]   123 |   using ReadOnlyHandle::[01;36m[KReadOnlyHandle[m[K;
+[3.629s]       |                         [01;36m[K^~~~~~~~~~~~~~[m[K
+[3.629s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:123:25:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[3.629s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:42:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Khardware_interface::ReadOnlyHandle::ReadOnlyHandle(const char*)[m[K’
+[3.629s]    42 |   explicit [01;36m[KReadOnlyHandle[m[K(const char * interface_name)
+[3.629s]       |            [01;36m[K^~~~~~~~~~~~~~[m[K
+[3.629s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:123:25:[m[K [01;36m[Knote: [m[K  inherited here
+[3.629s]   123 |   using ReadOnlyHandle::[01;36m[KReadOnlyHandle[m[K;
+[3.629s]       |                         [01;36m[K^~~~~~~~~~~~~~[m[K
+[3.629s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:123:25:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[3.629s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:47:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Khardware_interface::ReadOnlyHandle::ReadOnlyHandle(const hardware_interface::ReadOnlyHandle&)[m[K’
+[3.629s]    47 |   [01;36m[KReadOnlyHandle[m[K(const ReadOnlyHandle & other) = default;
+[3.630s]       |   [01;36m[K^~~~~~~~~~~~~~[m[K
+[3.630s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:123:25:[m[K [01;36m[Knote: [m[K  inherited here
+[3.630s]   123 |   using ReadOnlyHandle::[01;36m[KReadOnlyHandle[m[K;
+[3.630s]       |                         [01;36m[K^~~~~~~~~~~~~~[m[K
+[3.630s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:123:25:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[3.630s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:49:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Khardware_interface::ReadOnlyHandle::ReadOnlyHandle(hardware_interface::ReadOnlyHandle&&)[m[K’
+[3.630s]    49 |   [01;36m[KReadOnlyHandle[m[K(ReadOnlyHandle && other) = default;
+[3.630s]       |   [01;36m[K^~~~~~~~~~~~~~[m[K
+[3.630s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:123:25:[m[K [01;36m[Knote: [m[K  inherited here
+[3.630s]   123 |   using ReadOnlyHandle::[01;36m[KReadOnlyHandle[m[K;
+[3.630s]       |                         [01;36m[K^~~~~~~~~~~~~~[m[K
+[3.630s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:123:25:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[3.630s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:121:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Khardware_interface::StateInterface::StateInterface(hardware_interface::StateInterface&&)[m[K’
+[3.631s]   121 |   [01;36m[KStateInterface[m[K(StateInterface && other) = default;
+[3.631s]       |   [01;36m[K^~~~~~~~~~~~~~[m[K
+[3.631s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:121:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[3.631s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:119:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Khardware_interface::StateInterface::StateInterface(const hardware_interface::StateInterface&)[m[K’
+[3.631s]   119 |   [01;36m[KStateInterface[m[K(const StateInterface & other) = default;
+[3.631s]       |   [01;36m[K^~~~~~~~~~~~~~[m[K
+[3.631s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:119:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[3.634s] [01m[K/root/data/project_ws/src/hardware_link2/src/hardware_link2.cpp:[m[K In member function ‘[01m[Kvirtual std::vector<hardware_interface::CommandInterface> hardware_link2::HardwareLinkInterface::export_command_interfaces()[m[K’:
+[3.634s] [01m[K/root/data/project_ws/src/hardware_link2/src/hardware_link2.cpp:82:85:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Khardware_interface::CommandInterface::CommandInterface(std::string&, const char [9], std::vector<double>*)[m[K’
+[3.634s]    82 |         info_.joints[i].name, hardware_interface::HW_IF_VELOCITY, &wheels[0].cmd_vel[01;31m[K)[m[K);
+[3.634s]       |                                                                                     [01;31m[K^[m[K
+[3.634s] In file included from [01m[K/opt/ros/humble/include/hardware_interface/system_interface.hpp:22[m[K,
+[3.634s]                  from [01m[K/root/data/project_ws/src/hardware_link2/include/hardware_link2/hardware_link2.hpp:23[m[K,
+[3.635s]                  from [01m[K/root/data/project_ws/src/hardware_link2/src/hardware_link2.cpp:20[m[K:
+[3.635s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:88:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Khardware_interface::ReadWriteHandle::ReadWriteHandle(const string&, const string&, double*)[m[K’
+[3.635s]    88 |   [01;36m[KReadWriteHandle[m[K(
+[3.635s]       |   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[3.635s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:139:26:[m[K [01;36m[Knote: [m[K  inherited here
+[3.635s]   139 |   using ReadWriteHandle::[01;36m[KReadWriteHandle[m[K;
+[3.635s]       |                          [01;36m[K^~~~~~~~~~~~~~~[m[K
+[3.635s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:90:14:[m[K [01;36m[Knote: [m[K  no known conversion for argument 3 from ‘[01m[Kstd::vector<double>*[m[K’ to ‘[01m[Kdouble*[m[K’
+[3.635s]    90 |     [01;36m[Kdouble * value_ptr = nullptr[m[K)
+[3.636s]       |     [01;36m[K~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[3.636s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:95:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Khardware_interface::ReadWriteHandle::ReadWriteHandle(const string&)[m[K’
+[3.636s]    95 |   explicit [01;36m[KReadWriteHandle[m[K(const std::string & interface_name) : ReadOnlyHandle(interface_name) {}
+[3.636s]       |            [01;36m[K^~~~~~~~~~~~~~~[m[K
+[3.636s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:139:26:[m[K [01;36m[Knote: [m[K  inherited here
+[3.636s]   139 |   using ReadWriteHandle::[01;36m[KReadWriteHandle[m[K;
+[3.636s]       |                          [01;36m[K^~~~~~~~~~~~~~~[m[K
+[3.637s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:139:26:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[3.638s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:97:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Khardware_interface::ReadWriteHandle::ReadWriteHandle(const char*)[m[K’
+[3.639s]    97 |   explicit [01;36m[KReadWriteHandle[m[K(const char * interface_name) : ReadOnlyHandle(interface_name) {}
+[3.639s]       |            [01;36m[K^~~~~~~~~~~~~~~[m[K
+[3.639s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:139:26:[m[K [01;36m[Knote: [m[K  inherited here
+[3.639s]   139 |   using ReadWriteHandle::[01;36m[KReadWriteHandle[m[K;
+[3.639s]       |                          [01;36m[K^~~~~~~~~~~~~~~[m[K
+[3.639s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:139:26:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[3.639s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:99:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Khardware_interface::ReadWriteHandle::ReadWriteHandle(const hardware_interface::ReadWriteHandle&)[m[K’
+[3.639s]    99 |   [01;36m[KReadWriteHandle[m[K(const ReadWriteHandle & other) = default;
+[3.639s]       |   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[3.640s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:139:26:[m[K [01;36m[Knote: [m[K  inherited here
+[3.640s]   139 |   using ReadWriteHandle::[01;36m[KReadWriteHandle[m[K;
+[3.640s]       |                          [01;36m[K^~~~~~~~~~~~~~~[m[K
+[3.640s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:139:26:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[3.640s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:101:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Khardware_interface::ReadWriteHandle::ReadWriteHandle(hardware_interface::ReadWriteHandle&&)[m[K’
+[3.640s]   101 |   [01;36m[KReadWriteHandle[m[K(ReadWriteHandle && other) = default;
+[3.640s]       |   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[3.640s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:139:26:[m[K [01;36m[Knote: [m[K  inherited here
+[3.640s]   139 |   using ReadWriteHandle::[01;36m[KReadWriteHandle[m[K;
+[3.640s]       |                          [01;36m[K^~~~~~~~~~~~~~~[m[K
+[3.640s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:139:26:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[3.641s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:137:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Khardware_interface::CommandInterface::CommandInterface(hardware_interface::CommandInterface&&)[m[K’
+[3.641s]   137 |   [01;36m[KCommandInterface[m[K(CommandInterface && other) = default;
+[3.641s]       |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[3.641s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:137:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[3.641s] [01m[K/root/data/project_ws/src/hardware_link2/src/hardware_link2.cpp:87:85:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Khardware_interface::CommandInterface::CommandInterface(std::string&, const char [9], std::vector<double>*)[m[K’
+[3.641s]    87 |         info_.joints[i].name, hardware_interface::HW_IF_VELOCITY, &wheels[1].cmd_vel[01;31m[K)[m[K);
+[3.641s]       |                                                                                     [01;31m[K^[m[K
+[3.641s] In file included from [01m[K/opt/ros/humble/include/hardware_interface/system_interface.hpp:22[m[K,
+[3.641s]                  from [01m[K/root/data/project_ws/src/hardware_link2/include/hardware_link2/hardware_link2.hpp:23[m[K,
+[3.641s]                  from [01m[K/root/data/project_ws/src/hardware_link2/src/hardware_link2.cpp:20[m[K:
+[3.642s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:88:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Khardware_interface::ReadWriteHandle::ReadWriteHandle(const string&, const string&, double*)[m[K’
+[3.642s]    88 |   [01;36m[KReadWriteHandle[m[K(
+[3.642s]       |   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[3.642s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:139:26:[m[K [01;36m[Knote: [m[K  inherited here
+[3.642s]   139 |   using ReadWriteHandle::[01;36m[KReadWriteHandle[m[K;
+[3.642s]       |                          [01;36m[K^~~~~~~~~~~~~~~[m[K
+[3.642s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:90:14:[m[K [01;36m[Knote: [m[K  no known conversion for argument 3 from ‘[01m[Kstd::vector<double>*[m[K’ to ‘[01m[Kdouble*[m[K’
+[3.642s]    90 |     [01;36m[Kdouble * value_ptr = nullptr[m[K)
+[3.642s]       |     [01;36m[K~~~~~~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[3.642s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:95:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Khardware_interface::ReadWriteHandle::ReadWriteHandle(const string&)[m[K’
+[3.642s]    95 |   explicit [01;36m[KReadWriteHandle[m[K(const std::string & interface_name) : ReadOnlyHandle(interface_name) {}
+[3.643s]       |            [01;36m[K^~~~~~~~~~~~~~~[m[K
+[3.643s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:139:26:[m[K [01;36m[Knote: [m[K  inherited here
+[3.643s]   139 |   using ReadWriteHandle::[01;36m[KReadWriteHandle[m[K;
+[3.643s]       |                          [01;36m[K^~~~~~~~~~~~~~~[m[K
+[3.643s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:139:26:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[3.643s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:97:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Khardware_interface::ReadWriteHandle::ReadWriteHandle(const char*)[m[K’
+[3.643s]    97 |   explicit [01;36m[KReadWriteHandle[m[K(const char * interface_name) : ReadOnlyHandle(interface_name) {}
+[3.643s]       |            [01;36m[K^~~~~~~~~~~~~~~[m[K
+[3.643s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:139:26:[m[K [01;36m[Knote: [m[K  inherited here
+[3.643s]   139 |   using ReadWriteHandle::[01;36m[KReadWriteHandle[m[K;
+[3.643s]       |                          [01;36m[K^~~~~~~~~~~~~~~[m[K
+[3.643s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:139:26:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[3.644s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:99:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Khardware_interface::ReadWriteHandle::ReadWriteHandle(const hardware_interface::ReadWriteHandle&)[m[K’
+[3.644s]    99 |   [01;36m[KReadWriteHandle[m[K(const ReadWriteHandle & other) = default;
+[3.644s]       |   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[3.644s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:139:26:[m[K [01;36m[Knote: [m[K  inherited here
+[3.644s]   139 |   using ReadWriteHandle::[01;36m[KReadWriteHandle[m[K;
+[3.644s]       |                          [01;36m[K^~~~~~~~~~~~~~~[m[K
+[3.644s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:139:26:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[3.644s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:101:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Khardware_interface::ReadWriteHandle::ReadWriteHandle(hardware_interface::ReadWriteHandle&&)[m[K’
+[3.644s]   101 |   [01;36m[KReadWriteHandle[m[K(ReadWriteHandle && other) = default;
+[3.644s]       |   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[3.644s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:139:26:[m[K [01;36m[Knote: [m[K  inherited here
+[3.644s]   139 |   using ReadWriteHandle::[01;36m[KReadWriteHandle[m[K;
+[3.644s]       |                          [01;36m[K^~~~~~~~~~~~~~~[m[K
+[3.644s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:139:26:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[3.645s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:137:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Khardware_interface::CommandInterface::CommandInterface(hardware_interface::CommandInterface&&)[m[K’
+[3.645s]   137 |   [01;36m[KCommandInterface[m[K(CommandInterface && other) = default;
+[3.645s]       |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[3.645s] [01m[K/opt/ros/humble/include/hardware_interface/handle.hpp:137:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[4.329s] gmake[2]: *** [CMakeFiles/hardware_link2.dir/build.make:76: CMakeFiles/hardware_link2.dir/src/hardware_link2.cpp.o] Error 1
+[4.330s] gmake[1]: *** [CMakeFiles/Makefile2:176: CMakeFiles/hardware_link2.dir/all] Error 2
+[4.330s] gmake: *** [Makefile:146: all] Error 2
+[4.332s] Invoked command in '/root/data/project_ws/build/hardware_link2' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/data/project_ws/build/hardware_link2 -- -j4 -l4
