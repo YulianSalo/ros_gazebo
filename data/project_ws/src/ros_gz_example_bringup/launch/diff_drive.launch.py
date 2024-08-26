@@ -21,7 +21,14 @@ from launch.actions import DeclareLaunchArgument
 from launch.actions import IncludeLaunchDescription
 from launch.conditions import IfCondition
 from launch.launch_description_sources import PythonLaunchDescriptionSource
-from launch.substitutions import LaunchConfiguration, PathJoinSubstitution, Command
+from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
+from ament_index_python.packages import get_package_share_directory
+from launch import LaunchDescription
+from launch.actions import IncludeLaunchDescription
+from launch.launch_description_sources import PythonLaunchDescriptionSource
+from launch_ros.actions import Node
+from launch.substitutions import Command, LaunchConfiguration
+
 
 from launch_ros.actions import Node
 
@@ -29,12 +36,16 @@ from launch_ros.actions import Node
 def generate_launch_description():
     # Configure ROS nodes for launch
 
+    if 'IS_DEBUGGER' in os.environ:
+        is_debugger = True
+    else:
+        is_debugger = False
+
     if 'IS_SIM' in os.environ:
         is_sim = True
     else:
         is_sim = False
 
-    is_sim = True
 
     # Setup project paths
     pkg_project_bringup = get_package_share_directory('ros_gz_example_bringup')
@@ -42,16 +53,18 @@ def generate_launch_description():
     pkg_project_description = get_package_share_directory('ros_gz_example_description')
     pkg_ros_gz_sim = get_package_share_directory('ros_gz_sim')
 
-    # # Load the SDF file from "description" package
-    # urdf_file  =  os.path.join(pkg_project_description, 'models', 'diff_drive_urdf', 'model.urdf')
-    # with open(urdf_file, 'r') as infp:
-    #     robot_description_config = infp.read()
+    # Load the SDF file from "description" package
+    # sdf_file  =  os.path.join(pkg_project_description, 'models', 'diff_drive_urdf', 'model.urdf.xacro')
+    # with open(sdf_file, 'r') as infp:
+    #     robot_desc = infp.read()
 
     xacro_file = os.path.join(pkg_project_description, 'models', 'diff_drive_urdf', 'model.urdf.xacro')
     # robot_description_config = xacro.process_file(xacro_file).toxml()
     robot_description_config = Command(['xacro ', xacro_file, ' sim_mode:=', str(is_sim)])
 
     if (is_sim == True):
+        use_sim_time = True
+
         # Setup to launch the simulator and Gazebo world
         gz_sim = IncludeLaunchDescription(
             PythonLaunchDescriptionSource(
@@ -62,6 +75,7 @@ def generate_launch_description():
                 'diff_drive.sdf'
             ])}.items(),
         )
+    
         # Bridge ROS topics and Gazebo messages for establishing communication
         bridge = Node(
             package='ros_gz_bridge',
@@ -75,18 +89,22 @@ def generate_launch_description():
             ],
             output='screen'
         )
+
         ignition_spawn_entity = Node(
             package='ros_gz_sim',
             executable='create',
             output='screen',
             arguments=['-string', robot_description_config,
-                        '-name', 'diff_drive',
-                        '-allow_renaming', 'true',
-                        '-x', '0',
-                        '-y', '1',
-                        '-z', '0',],
+                    '-name', 'diff_drive',
+                    '-allow_renaming', 'true',
+                    '-x', '-1',
+                    '-y', '0',
+                    '-z', '0.01'],
+
             )
     else:
+        use_sim_time = False
+
         robot_controllers = os.path.join(pkg_project_bringup, 'config', 'diff_drive_controller_velocity.yaml')
         control_node = Node(
             package="controller_manager",
@@ -99,6 +117,15 @@ def generate_launch_description():
             arguments=['--ros-args', '--log-level', 'info']
         )
 
+        rplidar = IncludeLaunchDescription(
+            PythonLaunchDescriptionSource(
+                os.path.join(get_package_share_directory('rplidar_ros'), 'launch', 'rplidar_a1_launch.py')),
+            launch_arguments={'serial_port': '/dev/serial/by-id/usb-Silicon_Labs_CP2102N_USB_to_UART_Bridge_Controller_209c999d04e6ed11a087dca80b2af5ab-if00-port0',
+                                'serial_baudrate': '460800',
+                                'frame_id': 'lidar_link'
+                          }.items(),
+        )
+
 
     # Takes the description and joint angles as inputs and publishes the 3D poses of the robot links
     robot_state_publisher = Node(
@@ -106,10 +133,7 @@ def generate_launch_description():
         executable='robot_state_publisher',
         name='robot_state_publisher',
         output='both',
-        parameters=[
-            {'use_sim_time': True},
-            {'robot_description': robot_description_config},
-        ]
+        parameters=[{'use_sim_time': use_sim_time}, {'robot_description': robot_description_config}],
     )
 
     # Visualize in RViz
@@ -144,11 +168,18 @@ def generate_launch_description():
         PythonLaunchDescriptionSource(
             os.path.join(get_package_share_directory('nav2_bringup'), 'launch', 'bringup_launch.py')),
         launch_arguments={'params_file': os.path.join(pkg_project_bringup, 'config', 'nav2_params.yaml'),
-                            "map":os.path.join(pkg_project_bringup, 'config', 'my_map2.yaml'),
-                            "use_sim_time": "True",
-                            "slam": "True",
-                            }.items(),
+                        "map":os.path.join(pkg_project_bringup, 'config', 'my_map2.yaml'),
+                        'use_sim_time': str(use_sim_time),
+                        'slam': 'True',
+                        }.items(),
     )
+
+    # joy = Node(
+    #     package='teleop_twist_joy',
+    #     executable='teleop_twist_joy_node',
+    #     parameters=[os.path.join(pkg_project_bringup, 'config', 'ps3.config.yaml')],
+    #     output='screen'
+    # )
 
     my_node = Node(
         package='my_package',
@@ -156,13 +187,13 @@ def generate_launch_description():
         output='both'
     )
 
+
+
+
     diff_drive_spawner = Node(
         package="controller_manager",
         executable="spawner",
         arguments=["diff_drive_base_controller"],
-        remappings=[
-            ('/diff_drive_base_controller/cmd_vel_unstamped', '/cmd_vel_nav'),
-        ],
     )
 
     joint_broad_spawner = Node(
@@ -171,32 +202,52 @@ def generate_launch_description():
         arguments=["joint_state_broadcaster"],
     )
 
-    if is_sim==True:
-        return LaunchDescription([
-            gz_sim,
-            DeclareLaunchArgument('rviz', default_value='true',
-                                description='Open RViz.'),
-            bridge,
-            robot_state_publisher,
-            # joy_teleop,
-            ignition_spawn_entity,
-            diff_drive_spawner,
-            joint_broad_spawner,
-            # slam,
-            nav2,
-            my_node,
-            rviz,
-        ])
+    if (is_debugger == False):
+        if (is_sim == True):
+            return LaunchDescription([
+                gz_sim,
+                DeclareLaunchArgument('rviz', default_value='true',
+                                    description='Open RViz.'),
+                bridge,
+                robot_state_publisher,
+
+                #joy,
+
+                ignition_spawn_entity,
+                diff_drive_spawner,
+                joint_broad_spawner,
+
+        #        joy_teleop,
+        #        slam
+                nav2,
+                my_node,
+
+                rviz
+            ])
+        else:
+            return LaunchDescription([
+                DeclareLaunchArgument('rviz', default_value='true',
+                                    description='Open RViz.'),
+                robot_state_publisher,
+
+
+                rplidar,
+
+                #joy,
+                control_node,
+                diff_drive_spawner,
+                joint_broad_spawner,
+
+        #        joy_teleop,
+        #        slam
+                nav2,
+                my_node,
+
+        #      rviz
+            ])
     else:
         return LaunchDescription([
-            DeclareLaunchArgument('rviz', default_value='true',
-                                description='Open RViz.'),
-            robot_state_publisher,
-            control_node,
-            diff_drive_spawner,
-            joint_broad_spawner,
-            # slam,
-            # nav2,
-            # my_node,
-            # rviz,
-        ])
+                DeclareLaunchArgument('rviz', default_value='true',
+                                    description='Open RViz.'),
+                rviz
+            ])

@@ -26,10 +26,10 @@ Panels:
     Name: Time
     SyncMode: 0
     SyncSource: LaserScan
-  # - Class: slam_toolbox::SlamToolboxPlugin
-  #   Name: SlamToolboxPlugin
+#  - Class: slam_toolbox::SlamToolboxPlugin
+#    Name: SlamToolboxPlugin      
   - Class: nav2_rviz_plugins/Navigation 2
-    Name: Navigation 2
+    Name: Navigation 2    
 Visualization Manager:
   Class: ""
   Displays:

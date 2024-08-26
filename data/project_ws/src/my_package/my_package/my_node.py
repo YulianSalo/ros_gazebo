@@ -1,14 +1,15 @@
 import rclpy
 from rclpy.node import Node
 
-from geometry_msgs.msg import PoseStamped, Twist
+from std_msgs.msg import String
+from geometry_msgs.msg import Twist
+from geometry_msgs.msg import PoseStamped
 from nav2_simple_commander.robot_navigator import BasicNavigator, TaskResult
 import rclpy
 from rclpy.duration import Duration
 
-from std_msgs.msg import String
-
 from example_interfaces.srv import AddTwoInts
+
 
 class MinimalPublisher(Node):
 
@@ -16,35 +17,29 @@ class MinimalPublisher(Node):
         super().__init__('minimal_publisher')
         self.publisher_ = self.create_publisher(String, 'topic', 10)
         timer_period = 0.5  # seconds
-        # self.timer = self.create_timer(timer_period, self.timer_callback)
-        # def timer_callback(self):
-        #     msg = String()
-        #     msg.data = 'Hello World: %d' % self.i
-        #     self.publisher_.publish(msg)
-        #     self.get_logger().info('Publishing: "%s"' % msg.data)
-        #     self.i += 1
         self.i = 0
         self.srv = self.create_service(AddTwoInts, 'add_two_ints', self.add_two_ints_callback)
         self.topic_cmd_vel_nav = self.create_subscription(
             Twist,
             '/cmd_vel_nav',
             self.callback_cmd_vel,
-            10)
+            0)
         self.cmd_vel_pub = self.create_publisher(Twist, '/diff_drive_base_controller/cmd_vel_unstamped', 0)
 
     def callback_cmd_vel(self, cmd_vel_msg):
-        self.get_logger().info('cmd_vel received')
+#        self.get_logger().info('cmd_vel_received')
+
         self.cmd_vel_pub.publish(cmd_vel_msg)
 
+    #ros2 service call /add_two_ints example_interfaces/srv/AddTwoInts "{a: 1, b: 2}"
     def add_two_ints_callback(self, request, response):
-        # response.sum = request.a + request.b
-        # self.get_logger().info('Incoming request\na: %d b: %d' % (request.a, request.b))
+        response.sum = request.a + request.b
+        self.get_logger().info('Incoming request\na: %d b: %d' % (request.a, request.b))
 
-        # return response
 
         navigator = BasicNavigator()
 
-        # Set our demo's initial pose
+        #Set our demo's initial pose
         initial_pose = PoseStamped()
         initial_pose.header.frame_id = 'map'
         initial_pose.header.stamp = navigator.get_clock().now().to_msg()
@@ -60,6 +55,7 @@ class MinimalPublisher(Node):
         # navigator.lifecycleStartup()
 
         # Wait for navigation to fully activate, since autostarting nav2
+        #navigator.waitUntilNav2Active()
         navigator.waitUntilNav2Active(localizer="bt_navigator")
 
         # If desired, you can change or load the map as well
@@ -120,6 +116,11 @@ class MinimalPublisher(Node):
             print('Goal has an invalid return status!')
 
         navigator.lifecycleShutdown()
+
+        return response
+
+
+
 
 
 def main(args=None):

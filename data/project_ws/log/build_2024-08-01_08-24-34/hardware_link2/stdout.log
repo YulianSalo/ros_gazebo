@@ -1,5 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target hardware_link2[0m
-[ 11%] [32mBuilding CXX object CMakeFiles/hardware_link2.dir/src/hardware_link2.cpp.o[0m
-[ 44%] Built target gmock
-[ 66%] Built target gmock_main
-[ 88%] Built target test_hardware_link2

@@ -1,9 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.000593] (-) JobUnselected: {'identifier': 'hardware_link'}
-[0.000737] (-) JobUnselected: {'identifier': 'hardware_link_2'}
-[0.000767] (-) JobUnselected: {'identifier': 'my_package'}
-[0.000787] (-) JobUnselected: {'identifier': 'ros_gz_example_application'}
-[0.000805] (-) JobUnselected: {'identifier': 'ros_gz_example_bringup'}
-[0.000823] (-) JobUnselected: {'identifier': 'ros_gz_example_description'}
-[0.000840] (-) JobUnselected: {'identifier': 'ros_gz_example_gazebo'}
-[0.000858] (-) EventReactorShutdown: {}

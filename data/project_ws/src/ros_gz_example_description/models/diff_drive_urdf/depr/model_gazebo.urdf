@@ -1,23 +1,10 @@
-<?xml version="1.0"?>
-<robot name="diff_drive" xmlns:xacro="http://www.ros.org/wiki/xacro">
-
-  <xacro:property name="is_sim" value="$(arg sim_mode)" />
+<?xml version="1.0" ?>
+<robot name="diff_drive">
 
   <ros2_control name="IgnitionSystem" type="system">
-    <xacro:if value="${is_sim==True}">
-      <hardware>
-        <plugin>ign_ros2_control/IgnitionSystem</plugin>
-      </hardware>
-    </xacro:if>        
-    <xacro:if value="${is_sim==False}">
-      <hardware>
-        <plugin>hardware_link2/HardwareLinkInterface</plugin>
-        <param name="device">/dev/serial/by-id/usb-1a86_USB_Serial-if00-port0</param>
-        <param name="baud_rate">115200</param>
-        <param name="timeout_ms">1000</param>        
-      </hardware>
-    </xacro:if>
-
+    <hardware>
+      <plugin>ign_ros2_control/IgnitionSystem</plugin>
+    </hardware>
     <joint name="left_wheel_joint">
       <command_interface name="velocity">
         <param name="min">-1</param>
@@ -36,9 +23,6 @@
     </joint>
   </ros2_control>
 
-
-
-
   <gazebo>
     <plugin filename="ign_ros2_control-system" name="ign_ros2_control::IgnitionROS2ControlPlugin">
       <parameters>/root/data/project_ws/src/ros_gz_example_bringup/config/diff_drive_controller_velocity.yaml</parameters>
@@ -56,7 +40,7 @@
     </inertial>
     <visual>
       <geometry>
-        <box size="0.2 0.2 0.15"/>
+        <box size="0.3 0.3 0.15"/>
       </geometry>
       <gazebo>
         <material>
@@ -68,7 +52,7 @@
     </visual>
     <collision name='collision_chassis'>
       <geometry>
-        <box size="0.2 0.2 0.15"/>
+        <box size="0.3 0.3 0.15"/>
       </geometry>
     </collision>       
   </link>
@@ -80,14 +64,14 @@
   </joint>
 
   <link name="left_wheel">
-    <origin rpy="-1.5707 0 0" xyz="0.05 0.11 0.10"/>
+    <origin rpy="-1.5707 0 0" xyz="0.05 0.15 0.10"/>
     <inertial>
       <mass value="0.3"/>
       <inertia ixx="0.0012" ixy="0" ixz="0" iyy="0.0012" iyz="0" izz="0.0012"/>
     </inertial>
     <visual>
       <geometry>
-        <cylinder length="0.03" radius="0.034"/>
+        <cylinder length="0.03" radius="0.05"/>
       </geometry>
       <gazebo>
         <material>
@@ -99,7 +83,7 @@
     </visual>
     <collision name='collision_left_wheel'>
       <geometry>
-        <cylinder length="0.03" radius="0.034"/>
+        <cylinder length="0.03" radius="0.05"/>
       </geometry>   
     </collision> 
     <gazebo reference="left_wheel">
@@ -118,18 +102,18 @@
     <parent link="base_link"/>
     <child link="left_wheel"/>
     <axis xyz="0 0 1"/>
-    <origin rpy="-1.5707 0 0" xyz="0.05 0.11 0.10"/>
+    <origin rpy="-1.5707 0 0" xyz="0.05 0.15 0.10"/>
   </joint>
 
   <link name="right_wheel">
-    <origin rpy="-1.5707 0 0" xyz="0.05 -0.11 0.10"/>
+    <origin rpy="-1.5707 0 0" xyz="0.05 -0.15 0.10"/>
     <inertial>
       <mass value="0.3"/>
       <inertia ixx="0.0012" ixy="0" ixz="0" iyy="0.0012" iyz="0" izz="0.0012"/>
     </inertial>
     <visual>
       <geometry>
-        <cylinder length="0.03" radius="0.034"/>
+        <cylinder length="0.03" radius="0.05"/>
       </geometry>
       <gazebo>
         <material>
@@ -141,7 +125,7 @@
     </visual>
     <collision name='collision_right_wheel'>
       <geometry>
-        <cylinder length="0.03" radius="0.034"/>
+        <cylinder length="0.03" radius="0.05"/>
       </geometry>
     </collision>   
     <gazebo reference="right_wheel">
@@ -160,18 +144,18 @@
     <parent link="base_link"/>
     <child link="right_wheel"/>
     <axis xyz="0 0 1"/>
-    <origin rpy="-1.5707 0 0" xyz="0.05 -0.11 0.10"/>
+    <origin rpy="-1.5707 0 0" xyz="0.05 -0.15 0.10"/>
   </joint>
 
   <link name="caster">
-    <origin rpy="0 0 0" xyz="-0.10 0 0.10"/>
+    <origin rpy="0 0 0" xyz="-0.15 0 0.10"/>
     <inertial>
       <mass value="0.005"/>
       <inertia ixx="0.00001" ixy="0" ixz="0" iyy="0.00001" iyz="0" izz="0.00001"/>
     </inertial>
     <visual>
       <geometry>
-        <sphere radius="0.034"/>
+        <sphere radius="0.05"/>
       </geometry>
       <gazebo>
         <material>
@@ -183,7 +167,7 @@
     </visual>
     <collision name='collision_caster'>
       <geometry>
-        <sphere radius="0.034"/>
+        <sphere radius="0.05"/>
       </geometry>
     </collision>    
     <gazebo reference="caster">
@@ -201,7 +185,7 @@
   <joint name="caster_wheel" type="fixed">
     <parent link="base_link"/>
     <child link="caster"/>
-    <origin rpy="0 0 0" xyz="-0.10 0 0.10"/>
+    <origin rpy="0 0 0" xyz="-0.15 0 0.10"/>
   </joint>
 
 
@@ -209,7 +193,7 @@
 
 
   <link name="camera_link">
-    <origin rpy="0 0 0" xyz="0.10 0 0.2"/>
+    <origin rpy="0 0 0" xyz="0.15 0 0.2"/>
     <inertial>
       <mass value="0.1"/>
       <inertia ixx="0.000166667" iyy="0.000166667" izz="0.000166667" ixy="0" ixz="0" iyz="0"/>
@@ -257,11 +241,11 @@
   <joint name="camera_joint" type="fixed">
     <parent link="base_link"/>
     <child link="camera_link"/>
-    <origin rpy="0 0 0" xyz="0.10 0 0.2"/>    
+    <origin rpy="0 0 0" xyz="0.15 0 0.2"/>    
   </joint>
 
   <link name="lidar_link">
-    <origin rpy="0 0 3.14" xyz="0 0 0.25"/>
+    <origin rpy="0 0 0" xyz="0 0 0.25"/>
     <inertial>
       <mass value="0.1"/>
       <inertia ixx="0.000166667" iyy="0.000166667" izz="0.000166667" ixy="0" ixz="0" iyz="0"/>
@@ -317,9 +301,11 @@
   <joint name="lidar_joint" type="fixed">
     <parent link="base_link"/>
     <child link="lidar_link"/>
-    <origin rpy="0 0 3.14" xyz="0 0 0.25"/>    
+    <origin rpy="0 0 0" xyz="0 0 0.25"/>    
   </joint>
  
 
 
+
+  
 </robot>
