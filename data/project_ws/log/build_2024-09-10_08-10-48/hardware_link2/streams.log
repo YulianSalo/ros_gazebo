@@ -1,0 +1,138 @@
+[0.024s] Invoking command in '/root/data/project_ws/build/hardware_link2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/data/project_ws/src/hardware_link2 -DBUILD_TESTING=ON -DCMAKE_INSTALL_PREFIX=/root/data/project_ws/install/hardware_link2
+[0.346s] -- The C compiler identification is GNU 11.4.0
+[0.346s] -- The CXX compiler identification is GNU 11.4.0
+[0.346s] -- Detecting C compiler ABI info
+[0.354s] -- Detecting C compiler ABI info - done
+[0.365s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.366s] -- Detecting C compile features
+[0.366s] -- Detecting C compile features - done
+[0.371s] -- Detecting CXX compiler ABI info
+[0.504s] -- Detecting CXX compiler ABI info - done
+[0.525s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.526s] -- Detecting CXX compile features
+[0.526s] -- Detecting CXX compile features - done
+[0.534s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.757s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.929s] -- Found hardware_interface: 2.43.0 (/opt/ros/humble/share/hardware_interface/cmake)
+[1.016s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.029s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.049s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.080s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.113s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.510s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.516s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.565s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.642s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.646s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.669s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.674s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.685s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.698s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.714s] -- Looking for pthread.h
+[1.814s] -- Looking for pthread.h - found
+[1.814s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.915s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.916s] -- Found Threads: TRUE  
+[2.003s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.120s] -- Found gmock sources under '/opt/ros/humble/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[2.129s] -- Found ament_cmake_gtest: 1.3.10 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[2.130s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[2.146s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.146s] -- Configured cppcheck include dirs: /root/data/project_ws/src/hardware_link2/include
+[2.146s] -- Configured cppcheck exclude dirs and/or files: 
+[2.148s] -- Added test 'lint_cmake' to check CMake code style
+[2.150s] -- Added test 'uncrustify' to check C / C++ code style
+[2.150s] -- Configured uncrustify additional arguments: 
+[2.151s] -- Added test 'xmllint' to check XML markup files
+[2.155s] -- Configuring done
+[2.256s] -- Generating done
+[2.258s] -- Build files have been written to: /root/data/project_ws/build/hardware_link2
+[2.274s] Invoked command in '/root/data/project_ws/build/hardware_link2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/data/project_ws/src/hardware_link2 -DBUILD_TESTING=ON -DCMAKE_INSTALL_PREFIX=/root/data/project_ws/install/hardware_link2
+[2.276s] Invoking command in '/root/data/project_ws/build/hardware_link2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/data/project_ws/build/hardware_link2 -- -j4 -l4
+[2.339s] [ 11%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/opt/ros/humble/src/gtest_vendor/src/gtest-all.cc.o[0m
+[2.339s] [ 22%] [32mBuilding CXX object gmock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o[0m
+[2.340s] [ 33%] [32mBuilding CXX object CMakeFiles/hardware_link2.dir/src/hardware_link2.cpp.o[0m
+[2.344s] [ 44%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o[0m
+[4.430s] [ 55%] [32m[1mLinking CXX static library libgmock_main.a[0m
+[4.522s] [ 55%] Built target gmock_main
+[6.560s] [01m[K/root/data/project_ws/src/hardware_link2/src/hardware_link2.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::return_type hardware_link2::HardwareLinkInterface::read(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[6.561s] [01m[K/root/data/project_ws/src/hardware_link2/src/hardware_link2.cpp:252:40:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[6.561s]   252 |       [01;35m[Khardware_interface::return_type::ERROR[m[K;
+[6.561s]       |       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[6.562s] [01m[K/root/data/project_ws/src/hardware_link2/src/hardware_link2.cpp:322:42:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[6.562s]   322 |         [01;35m[Khardware_interface::return_type::ERROR[m[K;
+[6.562s]       |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[6.564s] [01m[K/root/data/project_ws/src/hardware_link2/src/hardware_link2.cpp:328:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksizep[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[6.564s]   328 |     auto [01;35m[Ksizep[m[K = read_buffer(buf_echo, sizeof(buf_echo));
+[6.564s]       |          [01;35m[K^~~~~[m[K
+[6.564s] [01m[K/root/data/project_ws/src/hardware_link2/src/hardware_link2.cpp:333:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[6.564s]   333 |     auto [01;35m[Ksize[m[K = read_buffer(buf_res, sizeof(buf_res));
+[6.564s]       |          [01;35m[K^~~~[m[K
+[6.564s] [01m[K/root/data/project_ws/src/hardware_link2/src/hardware_link2.cpp:338:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksizet[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[6.565s]   338 |     auto [01;35m[Ksizet[m[K = read_buffer(buf_ok, sizeof(buf_ok));
+[6.565s]       |          [01;35m[K^~~~~[m[K
+[6.565s] [01m[K/root/data/project_ws/src/hardware_link2/src/hardware_link2.cpp:258:8:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksizep[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[6.565s]   258 |   auto [01;35m[Ksizep[m[K = read_buffer(bufp, sizeof(bufp));
+[6.565s]       |        [01;35m[K^~~~~[m[K
+[6.565s] [01m[K/root/data/project_ws/src/hardware_link2/src/hardware_link2.cpp:263:8:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksize[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[6.566s]   263 |   auto [01;35m[Ksize[m[K = read_buffer(buf, sizeof(buf));
+[6.566s]       |        [01;35m[K^~~~[m[K
+[6.566s] [01m[K/root/data/project_ws/src/hardware_link2/src/hardware_link2.cpp:268:8:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksizet[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[6.566s]   268 |   auto [01;35m[Ksizet[m[K = read_buffer(buft, sizeof(buft));
+[6.566s]       |        [01;35m[K^~~~~[m[K
+[6.566s] [01m[K/root/data/project_ws/src/hardware_link2/src/hardware_link2.cpp:236:24:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktime[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.566s]   236 |   [01;35m[Kconst rclcpp::Time & time[m[K /*time*/, const rclcpp::Duration & period/*period*/)
+[6.566s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[6.566s] [01m[K/root/data/project_ws/src/hardware_link2/src/hardware_link2.cpp:236:64:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kperiod[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[6.567s]   236 | onst rclcpp::Time & time /*time*/, [01;35m[Kconst rclcpp::Duration & period[m[K/*period*/)
+[6.567s]       |                                    [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[6.567s] 
+[6.567s] [01m[K/root/data/project_ws/src/hardware_link2/src/hardware_link2.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::return_type hardware_link2::HardwareLinkInterface::write(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[6.567s] [01m[K/root/data/project_ws/src/hardware_link2/src/hardware_link2.cpp:388:40:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[6.567s]   388 |       [01;35m[Khardware_interface::return_type::ERROR[m[K;
+[6.567s]       |       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[6.569s] [01m[K/root/data/project_ws/src/hardware_link2/src/hardware_link2.cpp:392:8:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksizep[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[6.569s]   392 |   auto [01;35m[Ksizep[m[K = read_buffer(bufp, sizeof(bufp));
+[6.569s]       |        [01;35m[K^~~~~[m[K
+[6.569s] [01m[K/root/data/project_ws/src/hardware_link2/src/hardware_link2.cpp:396:8:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksizeok[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[6.569s]   396 |   auto [01;35m[Ksizeok[m[K = read_buffer(bufok, sizeof(bufok));
+[6.569s]       |        [01;35m[K^~~~~~[m[K
+[7.671s] [ 66%] [32m[1mLinking CXX static library libgmock.a[0m
+[7.761s] [ 66%] Built target gmock
+[7.793s] [ 77%] [32mBuilding CXX object CMakeFiles/test_hardware_link2.dir/test/test_hardware_link2.cpp.o[0m
+[8.154s] [ 88%] [32m[1mLinking CXX shared library libhardware_link2.so[0m
+[8.465s] [ 88%] Built target hardware_link2
+[10.052s] [100%] [32m[1mLinking CXX executable test_hardware_link2[0m
+[10.461s] [100%] Built target test_hardware_link2
+[10.478s] Invoked command in '/root/data/project_ws/build/hardware_link2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/data/project_ws/build/hardware_link2 -- -j4 -l4
+[10.520s] Invoking command in '/root/data/project_ws/build/hardware_link2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/data/project_ws/build/hardware_link2
+[10.529s] -- Install configuration: ""
+[10.529s] -- Installing: /root/data/project_ws/install/hardware_link2/share/hardware_link2/hardware_link2.xml
+[10.529s] -- Installing: /root/data/project_ws/install/hardware_link2/lib/libhardware_link2.so
+[10.530s] -- Set runtime path of "/root/data/project_ws/install/hardware_link2/lib/libhardware_link2.so" to ""
+[10.531s] -- Installing: /root/data/project_ws/install/hardware_link2/include
+[10.531s] -- Installing: /root/data/project_ws/install/hardware_link2/include/hardware_link2
+[10.531s] -- Installing: /root/data/project_ws/install/hardware_link2/include/hardware_link2/visibility_control.h
+[10.531s] -- Installing: /root/data/project_ws/install/hardware_link2/include/hardware_link2/hardware_link2.hpp
+[10.531s] -- Installing: /root/data/project_ws/install/hardware_link2/share/hardware_link2/environment/library_path.sh
+[10.531s] -- Installing: /root/data/project_ws/install/hardware_link2/share/hardware_link2/environment/library_path.dsv
+[10.532s] -- Installing: /root/data/project_ws/install/hardware_link2/share/ament_index/resource_index/package_run_dependencies/hardware_link2
+[10.532s] -- Installing: /root/data/project_ws/install/hardware_link2/share/ament_index/resource_index/parent_prefix_path/hardware_link2
+[10.532s] -- Installing: /root/data/project_ws/install/hardware_link2/share/hardware_link2/environment/ament_prefix_path.sh
+[10.532s] -- Installing: /root/data/project_ws/install/hardware_link2/share/hardware_link2/environment/ament_prefix_path.dsv
+[10.533s] -- Installing: /root/data/project_ws/install/hardware_link2/share/hardware_link2/environment/path.sh
+[10.533s] -- Installing: /root/data/project_ws/install/hardware_link2/share/hardware_link2/environment/path.dsv
+[10.533s] -- Installing: /root/data/project_ws/install/hardware_link2/share/hardware_link2/local_setup.bash
+[10.533s] -- Installing: /root/data/project_ws/install/hardware_link2/share/hardware_link2/local_setup.sh
+[10.533s] -- Installing: /root/data/project_ws/install/hardware_link2/share/hardware_link2/local_setup.zsh
+[10.534s] -- Installing: /root/data/project_ws/install/hardware_link2/share/hardware_link2/local_setup.dsv
+[10.534s] -- Installing: /root/data/project_ws/install/hardware_link2/share/hardware_link2/package.dsv
+[10.534s] -- Installing: /root/data/project_ws/install/hardware_link2/share/ament_index/resource_index/packages/hardware_link2
+[10.534s] -- Installing: /root/data/project_ws/install/hardware_link2/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/hardware_link2
+[10.534s] -- Installing: /root/data/project_ws/install/hardware_link2/share/hardware_link2/cmake/ament_cmake_export_include_directories-extras.cmake
+[10.534s] -- Installing: /root/data/project_ws/install/hardware_link2/share/hardware_link2/cmake/ament_cmake_export_libraries-extras.cmake
+[10.535s] -- Installing: /root/data/project_ws/install/hardware_link2/share/hardware_link2/cmake/ament_cmake_export_dependencies-extras.cmake
+[10.535s] -- Installing: /root/data/project_ws/install/hardware_link2/share/hardware_link2/cmake/hardware_link2Config.cmake
+[10.535s] -- Installing: /root/data/project_ws/install/hardware_link2/share/hardware_link2/cmake/hardware_link2Config-version.cmake
+[10.535s] -- Installing: /root/data/project_ws/install/hardware_link2/share/hardware_link2/package.xml
+[10.538s] Invoked command in '/root/data/project_ws/build/hardware_link2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/data/project_ws/build/hardware_link2

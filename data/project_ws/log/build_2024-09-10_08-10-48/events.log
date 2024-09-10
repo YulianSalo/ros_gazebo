@@ -1,0 +1,732 @@
+[0.000000] (-) TimerEvent: {}
+[0.000251] (hardware_link2) JobQueued: {'identifier': 'hardware_link2', 'dependencies': OrderedDict()}
+[0.000305] (my_package) JobQueued: {'identifier': 'my_package', 'dependencies': OrderedDict()}
+[0.000340] (ros_gz_example_application) JobQueued: {'identifier': 'ros_gz_example_application', 'dependencies': OrderedDict()}
+[0.000361] (ros_gz_example_description) JobQueued: {'identifier': 'ros_gz_example_description', 'dependencies': OrderedDict()}
+[0.000379] (ros_gz_example_gazebo) JobQueued: {'identifier': 'ros_gz_example_gazebo', 'dependencies': OrderedDict([('ros_gz_example_description', '/root/data/project_ws/install/ros_gz_example_description')])}
+[0.000401] (ros_gz_example_bringup) JobQueued: {'identifier': 'ros_gz_example_bringup', 'dependencies': OrderedDict([('ros_gz_example_description', '/root/data/project_ws/install/ros_gz_example_description'), ('ros_gz_example_gazebo', '/root/data/project_ws/install/ros_gz_example_gazebo')])}
+[0.001065] (ros_gz_example_description) JobStarted: {'identifier': 'ros_gz_example_description'}
+[0.010592] (hardware_link2) JobStarted: {'identifier': 'hardware_link2'}
+[0.015920] (my_package) JobStarted: {'identifier': 'my_package'}
+[0.022216] (ros_gz_example_application) JobStarted: {'identifier': 'ros_gz_example_application'}
+[0.028016] (ros_gz_example_description) JobProgress: {'identifier': 'ros_gz_example_description', 'progress': 'cmake'}
+[0.028597] (ros_gz_example_description) Command: {'cmd': ['/usr/bin/cmake', '/root/data/project_ws/src/ros_gz_example_description', '-DBUILD_TESTING=ON', '-DCMAKE_INSTALL_PREFIX=/root/data/project_ws/install/ros_gz_example_description'], 'cwd': '/root/data/project_ws/build/ros_gz_example_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'yulian-Inspiron-7577'), ('IGNITION_VERSION', 'fortress'), ('__GLX_VENDOR_LIBRARY_NAME', 'nvidia'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu:/usr/lib/i386-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64'), ('HOME', '/root'), ('OLDPWD', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLORTERM', 'truecolor'), ('IS_SIM', 'True'), ('ROS_DISTRO', 'humble'), ('_', '/usr/local/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics,compat32,utility,display'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('__NV_PRIME_RENDER_OFFLOAD', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('TERMINATOR_UUID', 'urn:uuid:5b0082e2-52bb-4ce8-b6f2-92c60a710a01'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/data/project_ws/build/ros_gz_example_description'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', '0'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.032011] (hardware_link2) JobProgress: {'identifier': 'hardware_link2', 'progress': 'cmake'}
+[0.032816] (hardware_link2) Command: {'cmd': ['/usr/bin/cmake', '/root/data/project_ws/src/hardware_link2', '-DBUILD_TESTING=ON', '-DCMAKE_INSTALL_PREFIX=/root/data/project_ws/install/hardware_link2'], 'cwd': '/root/data/project_ws/build/hardware_link2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'yulian-Inspiron-7577'), ('IGNITION_VERSION', 'fortress'), ('__GLX_VENDOR_LIBRARY_NAME', 'nvidia'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu:/usr/lib/i386-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64'), ('HOME', '/root'), ('OLDPWD', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLORTERM', 'truecolor'), ('IS_SIM', 'True'), ('ROS_DISTRO', 'humble'), ('_', '/usr/local/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics,compat32,utility,display'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('__NV_PRIME_RENDER_OFFLOAD', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('TERMINATOR_UUID', 'urn:uuid:5b0082e2-52bb-4ce8-b6f2-92c60a710a01'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/data/project_ws/build/hardware_link2'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', '0'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099745] (-) TimerEvent: {}
+[0.201102] (-) TimerEvent: {}
+[0.301448] (-) TimerEvent: {}
+[0.355082] (ros_gz_example_description) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.355328] (ros_gz_example_description) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.355453] (ros_gz_example_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.355989] (hardware_link2) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.356506] (hardware_link2) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.356685] (hardware_link2) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.357841] (ros_gz_example_application) JobProgress: {'identifier': 'ros_gz_example_application', 'progress': 'cmake'}
+[0.358113] (ros_gz_example_application) Command: {'cmd': ['/usr/bin/cmake', '/root/data/project_ws/src/ros_gz_example_application', '-DBUILD_TESTING=ON', '-DCMAKE_INSTALL_PREFIX=/root/data/project_ws/install/ros_gz_example_application'], 'cwd': '/root/data/project_ws/build/ros_gz_example_application', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'yulian-Inspiron-7577'), ('IGNITION_VERSION', 'fortress'), ('__GLX_VENDOR_LIBRARY_NAME', 'nvidia'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu:/usr/lib/i386-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64'), ('HOME', '/root'), ('OLDPWD', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLORTERM', 'truecolor'), ('IS_SIM', 'True'), ('ROS_DISTRO', 'humble'), ('_', '/usr/local/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics,compat32,utility,display'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('__NV_PRIME_RENDER_OFFLOAD', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('TERMINATOR_UUID', 'urn:uuid:5b0082e2-52bb-4ce8-b6f2-92c60a710a01'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/data/project_ws/build/ros_gz_example_application'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', '0'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.363500] (hardware_link2) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.373254] (ros_gz_example_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.375073] (hardware_link2) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.376223] (hardware_link2) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.376426] (hardware_link2) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.381252] (hardware_link2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.383250] (ros_gz_example_description) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.383515] (ros_gz_example_description) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.383965] (ros_gz_example_description) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.387794] (ros_gz_example_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.401590] (-) TimerEvent: {}
+[0.440987] (ros_gz_example_application) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.502429] (-) TimerEvent: {}
+[0.514789] (hardware_link2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.522771] (ros_gz_example_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.533780] (ros_gz_example_description) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.535179] (ros_gz_example_application) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.535345] (hardware_link2) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.536840] (ros_gz_example_description) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.536991] (hardware_link2) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.537074] (hardware_link2) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.537478] (ros_gz_example_description) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.543934] (ros_gz_example_application) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.544091] (hardware_link2) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.544505] (ros_gz_example_description) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.602542] (-) TimerEvent: {}
+[0.645365] (ros_gz_example_application) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.656540] (ros_gz_example_application) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.657389] (ros_gz_example_application) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.658145] (ros_gz_example_application) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.662597] (ros_gz_example_application) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.702634] (-) TimerEvent: {}
+[0.767633] (hardware_link2) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.769907] (ros_gz_example_description) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.781713] (ros_gz_example_application) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.793942] (ros_gz_example_application) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.794114] (ros_gz_example_application) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.795237] (ros_gz_example_application) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.798414] (ros_gz_example_application) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.802802] (-) TimerEvent: {}
+[0.842208] (my_package) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/my_package', 'build', '--build-base', '/root/data/project_ws/build/my_package/build', 'install', '--record', '/root/data/project_ws/build/my_package/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/root/data/project_ws/src/my_package', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'HOSTNAME': 'yulian-Inspiron-7577', 'IGNITION_VERSION': 'fortress', '__GLX_VENDOR_LIBRARY_NAME': 'nvidia', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu:/usr/lib/i386-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64', 'HOME': '/root', 'OLDPWD': '/root', 'ROS_PYTHON_VERSION': '3', 'COLORTERM': 'truecolor', 'IS_SIM': 'True', 'ROS_DISTRO': 'humble', '_': '/usr/local/bin/colcon', 'ROS_VERSION': '2', 'NVIDIA_DRIVER_CAPABILITIES': 'graphics,compat32,utility,display', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', '__NV_PRIME_RENDER_OFFLOAD': '1', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'DEBIAN_FRONTEND': 'noninteractive', 'TERMINATOR_UUID': 'urn:uuid:5b0082e2-52bb-4ce8-b6f2-92c60a710a01', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/root/data/project_ws/build/my_package', 'PYTHONPATH': '/root/data/project_ws/build/my_package/prefix_override:/usr/local/lib/python3.10/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/data/project_ws/install/my_package/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'NVIDIA_VISIBLE_DEVICES': '0', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[0.902894] (-) TimerEvent: {}
+[0.939714] (hardware_link2) StdoutLine: {'line': b'-- Found hardware_interface: 2.43.0 (/opt/ros/humble/share/hardware_interface/cmake)\n'}
+[0.941762] (ros_gz_example_description) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.994855] (ros_gz_example_application) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.005857] (-) TimerEvent: {}
+[1.026252] (hardware_link2) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.039790] (hardware_link2) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.048983] (ros_gz_example_description) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.056599] (ros_gz_example_description) StdoutLine: {'line': b'-- Generating done\n'}
+[1.058235] (ros_gz_example_description) StdoutLine: {'line': b'-- Build files have been written to: /root/data/project_ws/build/ros_gz_example_description\n'}
+[1.059674] (hardware_link2) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.064049] (ros_gz_example_description) CommandEnded: {'returncode': 0}
+[1.066132] (ros_gz_example_description) JobProgress: {'identifier': 'ros_gz_example_description', 'progress': 'build'}
+[1.066221] (ros_gz_example_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/data/project_ws/build/ros_gz_example_description', '--', '-j4', '-l4'], 'cwd': '/root/data/project_ws/build/ros_gz_example_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'yulian-Inspiron-7577'), ('IGNITION_VERSION', 'fortress'), ('__GLX_VENDOR_LIBRARY_NAME', 'nvidia'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu:/usr/lib/i386-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64'), ('HOME', '/root'), ('OLDPWD', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLORTERM', 'truecolor'), ('IS_SIM', 'True'), ('ROS_DISTRO', 'humble'), ('_', '/usr/local/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics,compat32,utility,display'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('__NV_PRIME_RENDER_OFFLOAD', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('TERMINATOR_UUID', 'urn:uuid:5b0082e2-52bb-4ce8-b6f2-92c60a710a01'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/data/project_ws/build/ros_gz_example_description'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', '0'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.090389] (hardware_link2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.105961] (-) TimerEvent: {}
+[1.119626] (ros_gz_example_description) CommandEnded: {'returncode': 0}
+[1.123395] (hardware_link2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.128296] (my_package) StdoutLine: {'line': b'running egg_info\n'}
+[1.128753] (my_package) StdoutLine: {'line': b'creating ../../build/my_package/my_package.egg-info\n'}
+[1.128839] (my_package) StdoutLine: {'line': b'writing ../../build/my_package/my_package.egg-info/PKG-INFO\n'}
+[1.128907] (my_package) StdoutLine: {'line': b'writing dependency_links to ../../build/my_package/my_package.egg-info/dependency_links.txt\n'}
+[1.128973] (my_package) StdoutLine: {'line': b'writing entry points to ../../build/my_package/my_package.egg-info/entry_points.txt\n'}
+[1.129037] (my_package) StdoutLine: {'line': b'writing requirements to ../../build/my_package/my_package.egg-info/requires.txt\n'}
+[1.129119] (my_package) StdoutLine: {'line': b'writing top-level names to ../../build/my_package/my_package.egg-info/top_level.txt\n'}
+[1.130486] (my_package) StdoutLine: {'line': b"writing manifest file '../../build/my_package/my_package.egg-info/SOURCES.txt'\n"}
+[1.131620] (my_package) StdoutLine: {'line': b"reading manifest file '../../build/my_package/my_package.egg-info/SOURCES.txt'\n"}
+[1.132064] (my_package) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[1.132937] (my_package) StdoutLine: {'line': b"writing manifest file '../../build/my_package/my_package.egg-info/SOURCES.txt'\n"}
+[1.133268] (my_package) StdoutLine: {'line': b'running build\n'}
+[1.133451] (my_package) StdoutLine: {'line': b'running build_py\n'}
+[1.133799] (my_package) StdoutLine: {'line': b'creating /root/data/project_ws/build/my_package/build\n'}
+[1.134026] (my_package) StdoutLine: {'line': b'creating /root/data/project_ws/build/my_package/build/lib\n'}
+[1.134506] (my_package) StdoutLine: {'line': b'creating /root/data/project_ws/build/my_package/build/lib/my_package\n'}
+[1.135144] (my_package) StdoutLine: {'line': b'copying my_package/my_node.py -> /root/data/project_ws/build/my_package/build/lib/my_package\n'}
+[1.135359] (my_package) StdoutLine: {'line': b'copying my_package/__init__.py -> /root/data/project_ws/build/my_package/build/lib/my_package\n'}
+[1.135783] (my_package) StdoutLine: {'line': b'running install\n'}
+[1.137360] (my_package) StdoutLine: {'line': b'running install_lib\n'}
+[1.137581] (my_package) StdoutLine: {'line': b'creating /root/data/project_ws/install/my_package/lib/python3.10/site-packages/my_package\n'}
+[1.137882] (my_package) StdoutLine: {'line': b'copying /root/data/project_ws/build/my_package/build/lib/my_package/my_node.py -> /root/data/project_ws/install/my_package/lib/python3.10/site-packages/my_package\n'}
+[1.138244] (my_package) StdoutLine: {'line': b'copying /root/data/project_ws/build/my_package/build/lib/my_package/__init__.py -> /root/data/project_ws/install/my_package/lib/python3.10/site-packages/my_package\n'}
+[1.139129] (my_package) StdoutLine: {'line': b'byte-compiling /root/data/project_ws/install/my_package/lib/python3.10/site-packages/my_package/my_node.py to my_node.cpython-310.pyc\n'}
+[1.140367] (my_package) StdoutLine: {'line': b'byte-compiling /root/data/project_ws/install/my_package/lib/python3.10/site-packages/my_package/__init__.py to __init__.cpython-310.pyc\n'}
+[1.140929] (my_package) StdoutLine: {'line': b'running install_data\n'}
+[1.141251] (my_package) StdoutLine: {'line': b'creating /root/data/project_ws/install/my_package/share/ament_index\n'}
+[1.141353] (my_package) StdoutLine: {'line': b'creating /root/data/project_ws/install/my_package/share/ament_index/resource_index\n'}
+[1.141679] (my_package) StdoutLine: {'line': b'creating /root/data/project_ws/install/my_package/share/ament_index/resource_index/packages\n'}
+[1.143225] (my_package) StdoutLine: {'line': b'copying resource/my_package -> /root/data/project_ws/install/my_package/share/ament_index/resource_index/packages\n'}
+[1.143502] (my_package) StdoutLine: {'line': b'copying package.xml -> /root/data/project_ws/install/my_package/share/my_package\n'}
+[1.143586] (my_package) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.146140] (my_package) StdoutLine: {'line': b'Copying ../../build/my_package/my_package.egg-info to /root/data/project_ws/install/my_package/lib/python3.10/site-packages/my_package-0.0.0-py3.10.egg-info\n'}
+[1.146428] (my_package) StdoutLine: {'line': b'running install_scripts\n'}
+[1.161404] (ros_gz_example_description) JobProgress: {'identifier': 'ros_gz_example_description', 'progress': 'install'}
+[1.172802] (ros_gz_example_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/data/project_ws/build/ros_gz_example_description'], 'cwd': '/root/data/project_ws/build/ros_gz_example_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'yulian-Inspiron-7577'), ('IGNITION_VERSION', 'fortress'), ('__GLX_VENDOR_LIBRARY_NAME', 'nvidia'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu:/usr/lib/i386-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64'), ('HOME', '/root'), ('OLDPWD', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLORTERM', 'truecolor'), ('IS_SIM', 'True'), ('ROS_DISTRO', 'humble'), ('_', '/usr/local/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics,compat32,utility,display'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('__NV_PRIME_RENDER_OFFLOAD', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('TERMINATOR_UUID', 'urn:uuid:5b0082e2-52bb-4ce8-b6f2-92c60a710a01'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/data/project_ws/build/ros_gz_example_description'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', '0'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.176586] (my_package) StdoutLine: {'line': b'Installing my_node script to /root/data/project_ws/install/my_package/lib/my_package\n'}
+[1.176734] (my_package) StdoutLine: {'line': b"writing list of installed files to '/root/data/project_ws/build/my_package/install.log'\n"}
+[1.187447] (ros_gz_example_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.187610] (ros_gz_example_description) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/models\n'}
+[1.188670] (ros_gz_example_description) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/models/diff_drive_urdf\n'}
+[1.189860] (ros_gz_example_description) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/models/diff_drive_urdf/model.urdf.xacro\n'}
+[1.190384] (ros_gz_example_description) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/environment/ros_gz_example_description.dsv\n'}
+[1.190610] (ros_gz_example_description) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/environment/ros_gz_example_description.sh\n'}
+[1.190691] (ros_gz_example_description) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ament_index/resource_index/package_run_dependencies/ros_gz_example_description\n'}
+[1.190768] (ros_gz_example_description) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ament_index/resource_index/parent_prefix_path/ros_gz_example_description\n'}
+[1.190888] (ros_gz_example_description) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/environment/ament_prefix_path.sh\n'}
+[1.190965] (ros_gz_example_description) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/environment/ament_prefix_path.dsv\n'}
+[1.191078] (ros_gz_example_description) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/environment/path.sh\n'}
+[1.191150] (ros_gz_example_description) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/environment/path.dsv\n'}
+[1.191232] (ros_gz_example_description) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/local_setup.bash\n'}
+[1.191305] (ros_gz_example_description) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/local_setup.sh\n'}
+[1.191383] (ros_gz_example_description) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/local_setup.zsh\n'}
+[1.191452] (ros_gz_example_description) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/local_setup.dsv\n'}
+[1.191521] (ros_gz_example_description) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/package.dsv\n'}
+[1.191589] (ros_gz_example_description) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ament_index/resource_index/packages/ros_gz_example_description\n'}
+[1.191659] (ros_gz_example_description) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/cmake/ros_gz_example_descriptionConfig.cmake\n'}
+[1.191727] (ros_gz_example_description) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/cmake/ros_gz_example_descriptionConfig-version.cmake\n'}
+[1.191796] (ros_gz_example_description) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/package.xml\n'}
+[1.193893] (ros_gz_example_description) CommandEnded: {'returncode': 0}
+[1.207044] (-) TimerEvent: {}
+[1.215961] (ros_gz_example_application) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.219227] (my_package) CommandEnded: {'returncode': 0}
+[1.220936] (ros_gz_example_application) StdoutLine: {'line': b'-- Generating done\n'}
+[1.222467] (ros_gz_example_application) StdoutLine: {'line': b'-- Build files have been written to: /root/data/project_ws/build/ros_gz_example_application\n'}
+[1.226069] (my_package) JobEnded: {'identifier': 'my_package', 'rc': 0}
+[1.226867] (ros_gz_example_application) CommandEnded: {'returncode': 0}
+[1.228670] (ros_gz_example_application) JobProgress: {'identifier': 'ros_gz_example_application', 'progress': 'build'}
+[1.228709] (ros_gz_example_application) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/data/project_ws/build/ros_gz_example_application', '--', '-j4', '-l4'], 'cwd': '/root/data/project_ws/build/ros_gz_example_application', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'yulian-Inspiron-7577'), ('IGNITION_VERSION', 'fortress'), ('__GLX_VENDOR_LIBRARY_NAME', 'nvidia'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu:/usr/lib/i386-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64'), ('HOME', '/root'), ('OLDPWD', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLORTERM', 'truecolor'), ('IS_SIM', 'True'), ('ROS_DISTRO', 'humble'), ('_', '/usr/local/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics,compat32,utility,display'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('__NV_PRIME_RENDER_OFFLOAD', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('TERMINATOR_UUID', 'urn:uuid:5b0082e2-52bb-4ce8-b6f2-92c60a710a01'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/data/project_ws/build/ros_gz_example_application'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', '0'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.252421] (ros_gz_example_description) JobEnded: {'identifier': 'ros_gz_example_description', 'rc': 0}
+[1.252974] (ros_gz_example_gazebo) JobStarted: {'identifier': 'ros_gz_example_gazebo'}
+[1.260252] (ros_gz_example_gazebo) JobProgress: {'identifier': 'ros_gz_example_gazebo', 'progress': 'cmake'}
+[1.260310] (ros_gz_example_gazebo) Command: {'cmd': ['/usr/bin/cmake', '/root/data/project_ws/src/ros_gz_example_gazebo', '-DBUILD_TESTING=ON', '-DCMAKE_INSTALL_PREFIX=/root/data/project_ws/install/ros_gz_example_gazebo'], 'cwd': '/root/data/project_ws/build/ros_gz_example_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'yulian-Inspiron-7577'), ('IGNITION_VERSION', 'fortress'), ('__GLX_VENDOR_LIBRARY_NAME', 'nvidia'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu:/usr/lib/i386-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64'), ('HOME', '/root'), ('OLDPWD', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLORTERM', 'truecolor'), ('IS_SIM', 'True'), ('ROS_DISTRO', 'humble'), ('_', '/usr/local/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics,compat32,utility,display'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('__NV_PRIME_RENDER_OFFLOAD', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/data/project_ws/install/ros_gz_example_description:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('TERMINATOR_UUID', 'urn:uuid:5b0082e2-52bb-4ce8-b6f2-92c60a710a01'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IGN_GAZEBO_RESOURCE_PATH', '/root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/models'), ('PWD', '/root/data/project_ws/build/ros_gz_example_gazebo'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', '0'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/root/data/project_ws/install/ros_gz_example_description:/opt/ros/humble')]), 'shell': False}
+[1.283610] (ros_gz_example_application) CommandEnded: {'returncode': 0}
+[1.307630] (-) TimerEvent: {}
+[1.314650] (ros_gz_example_application) JobProgress: {'identifier': 'ros_gz_example_application', 'progress': 'install'}
+[1.315159] (ros_gz_example_application) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/data/project_ws/build/ros_gz_example_application'], 'cwd': '/root/data/project_ws/build/ros_gz_example_application', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'yulian-Inspiron-7577'), ('IGNITION_VERSION', 'fortress'), ('__GLX_VENDOR_LIBRARY_NAME', 'nvidia'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu:/usr/lib/i386-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64'), ('HOME', '/root'), ('OLDPWD', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLORTERM', 'truecolor'), ('IS_SIM', 'True'), ('ROS_DISTRO', 'humble'), ('_', '/usr/local/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics,compat32,utility,display'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('__NV_PRIME_RENDER_OFFLOAD', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('TERMINATOR_UUID', 'urn:uuid:5b0082e2-52bb-4ce8-b6f2-92c60a710a01'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/data/project_ws/build/ros_gz_example_application'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', '0'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.325916] (ros_gz_example_application) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.326126] (ros_gz_example_application) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_application/share/ament_index/resource_index/package_run_dependencies/ros_gz_example_application\n'}
+[1.326450] (ros_gz_example_application) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_application/share/ament_index/resource_index/parent_prefix_path/ros_gz_example_application\n'}
+[1.326726] (ros_gz_example_application) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_application/share/ros_gz_example_application/environment/ament_prefix_path.sh\n'}
+[1.326936] (ros_gz_example_application) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_application/share/ros_gz_example_application/environment/ament_prefix_path.dsv\n'}
+[1.327103] (ros_gz_example_application) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_application/share/ros_gz_example_application/environment/path.sh\n'}
+[1.327356] (ros_gz_example_application) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_application/share/ros_gz_example_application/environment/path.dsv\n'}
+[1.327568] (ros_gz_example_application) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_application/share/ros_gz_example_application/local_setup.bash\n'}
+[1.327719] (ros_gz_example_application) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_application/share/ros_gz_example_application/local_setup.sh\n'}
+[1.327883] (ros_gz_example_application) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_application/share/ros_gz_example_application/local_setup.zsh\n'}
+[1.328043] (ros_gz_example_application) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_application/share/ros_gz_example_application/local_setup.dsv\n'}
+[1.328229] (ros_gz_example_application) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_application/share/ros_gz_example_application/package.dsv\n'}
+[1.328437] (ros_gz_example_application) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_application/share/ament_index/resource_index/packages/ros_gz_example_application\n'}
+[1.328640] (ros_gz_example_application) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_application/share/ros_gz_example_application/cmake/ros_gz_example_applicationConfig.cmake\n'}
+[1.328792] (ros_gz_example_application) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_application/share/ros_gz_example_application/cmake/ros_gz_example_applicationConfig-version.cmake\n'}
+[1.328953] (ros_gz_example_application) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_application/share/ros_gz_example_application/package.xml\n'}
+[1.332886] (ros_gz_example_application) CommandEnded: {'returncode': 0}
+[1.335629] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.382909] (ros_gz_example_application) JobEnded: {'identifier': 'ros_gz_example_application', 'rc': 0}
+[1.407759] (-) TimerEvent: {}
+[1.412154] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.421756] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.507878] (-) TimerEvent: {}
+[1.512722] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.520368] (hardware_link2) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.522815] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.523107] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.525193] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.526420] (hardware_link2) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.529020] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.575751] (hardware_link2) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[1.607972] (-) TimerEvent: {}
+[1.636554] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.646341] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.646707] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.647324] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.651864] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.652293] (hardware_link2) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.656762] (hardware_link2) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[1.679516] (hardware_link2) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.684861] (hardware_link2) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[1.695994] (hardware_link2) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[1.708065] (hardware_link2) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.708274] (-) TimerEvent: {}
+[1.724577] (hardware_link2) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.809893] (-) TimerEvent: {}
+[1.824496] (hardware_link2) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.824854] (hardware_link2) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.856632] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.909982] (-) TimerEvent: {}
+[1.925177] (hardware_link2) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.926655] (hardware_link2) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.981847] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Found ros_gz_example_description: 0.0.0 (/root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/cmake)\n'}
+[1.996700] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-plugin1 -- found version 1.4.0\n'}
+[1.997177] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-plugin1\n'}
+[1.997859] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <ignition-plugin1> component [register]\n'}
+[2.002047] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-plugin1-register -- found version 1.4.0\n'}
+[2.002591] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-plugin1-register\n'}
+[2.007711] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common4 -- found version 4.7.0\n'}
+[2.008176] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common4\n'}
+[2.008761] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[2.010085] (-) TimerEvent: {}
+[2.013474] (hardware_link2) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.018195] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[2.019707] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[2.025900] (ros_gz_example_gazebo) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[2.041314] (ros_gz_example_gazebo) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[2.084293] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[2.085503] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <ignition-common4> component [profiler]\n'}
+[2.089797] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common4-profiler -- found version 4.7.0\n'}
+[2.090597] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common4-profiler\n'}
+[2.097920] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-gazebo6 -- found version 6.16.0\n'}
+[2.098556] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-gazebo6\n'}
+[2.102773] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for sdformat12 -- found version 12.8.0\n'}
+[2.103261] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of sdformat12\n'}
+[2.109458] (ros_gz_example_gazebo) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[2.110201] (-) TimerEvent: {}
+[2.123848] (ros_gz_example_gazebo) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[2.130555] (hardware_link2) StdoutLine: {'line': b"-- Found gmock sources under '/opt/ros/humble/src/gmock_vendor': C++ tests using 'Google Mock' will be built\n"}
+[2.139098] (hardware_link2) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 1.3.10 (/opt/ros/humble/share/ament_cmake_gtest/cmake)\n'}
+[2.140768] (hardware_link2) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[2.156586] (hardware_link2) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.156970] (hardware_link2) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /root/data/project_ws/src/hardware_link2/include\n'}
+[2.157075] (hardware_link2) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.158445] (hardware_link2) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.160231] (hardware_link2) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.160372] (hardware_link2) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.161067] (hardware_link2) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.165749] (hardware_link2) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.166797] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[2.167607] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[2.172914] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-utils1 -- found version 1.5.1\n'}
+[2.173497] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-utils1\n'}
+[2.175799] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-plugin1 -- found version 1.4.0\n'}
+[2.176436] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-plugin1\n'}
+[2.176729] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <ignition-plugin1> component [loader]\n'}
+[2.180681] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-plugin1-loader -- found version 1.4.0\n'}
+[2.181275] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-plugin1-loader\n'}
+[2.181985] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <ignition-plugin1> component [register]\n'}
+[2.186598] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-transport11 -- found version 11.4.1\n'}
+[2.187093] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport11\n'}
+[2.210312] (-) TimerEvent: {}
+[2.266599] (hardware_link2) StdoutLine: {'line': b'-- Generating done\n'}
+[2.269003] (hardware_link2) StdoutLine: {'line': b'-- Build files have been written to: /root/data/project_ws/build/hardware_link2\n'}
+[2.284394] (hardware_link2) CommandEnded: {'returncode': 0}
+[2.285099] (hardware_link2) JobProgress: {'identifier': 'hardware_link2', 'progress': 'build'}
+[2.286030] (hardware_link2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/data/project_ws/build/hardware_link2', '--', '-j4', '-l4'], 'cwd': '/root/data/project_ws/build/hardware_link2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'yulian-Inspiron-7577'), ('IGNITION_VERSION', 'fortress'), ('__GLX_VENDOR_LIBRARY_NAME', 'nvidia'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu:/usr/lib/i386-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64'), ('HOME', '/root'), ('OLDPWD', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLORTERM', 'truecolor'), ('IS_SIM', 'True'), ('ROS_DISTRO', 'humble'), ('_', '/usr/local/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics,compat32,utility,display'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('__NV_PRIME_RENDER_OFFLOAD', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('TERMINATOR_UUID', 'urn:uuid:5b0082e2-52bb-4ce8-b6f2-92c60a710a01'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/data/project_ws/build/hardware_link2'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', '0'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.310385] (-) TimerEvent: {}
+[2.349343] (hardware_link2) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object gmock/CMakeFiles/gmock.dir/opt/ros/humble/src/gtest_vendor/src/gtest-all.cc.o\x1b[0m\n'}
+[2.349521] (hardware_link2) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object gmock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o\x1b[0m\n'}
+[2.350296] (hardware_link2) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/hardware_link2.dir/src/hardware_link2.cpp.o\x1b[0m\n'}
+[2.354272] (hardware_link2) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o\x1b[0m\n'}
+[2.410477] (-) TimerEvent: {}
+[2.418280] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[2.450717] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[2.465071] (ros_gz_example_gazebo) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[2.489986] (ros_gz_example_gazebo) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[2.512159] (-) TimerEvent: {}
+[2.544472] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[2.562122] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-utils1 -- found version 1.5.1\n'}
+[2.562662] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-utils1\n'}
+[2.562820] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <ignition-utils1> component [cli]\n'}
+[2.566669] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-utils1-cli -- found version 1.5.1\n'}
+[2.569851] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-utils1-cli\n'}
+[2.575368] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs8 -- found version 8.7.0\n'}
+[2.576039] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs8\n'}
+[2.607898] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[2.611242] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[2.612341] (-) TimerEvent: {}
+[2.622518] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <ignition-transport11> component [log]\n'}
+[2.627156] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-transport11-log -- found version 11.4.1\n'}
+[2.627761] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport11-log\n'}
+[2.631882] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <ignition-transport11> component [parameters]\n'}
+[2.639554] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-transport11-parameters -- found version 11.4.1\n'}
+[2.642978] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport11-parameters\n'}
+[2.645700] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs8 -- found version 8.7.0\n'}
+[2.647263] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common4 -- found version 4.7.0\n'}
+[2.647982] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common4\n'}
+[2.649667] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[2.650000] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[2.666590] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <ignition-common4> component [profiler]\n'}
+[2.666754] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <ignition-common4> component [events]\n'}
+[2.670520] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common4-events -- found version 4.7.0\n'}
+[2.671103] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common4-events\n'}
+[2.671928] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[2.675377] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <ignition-common4> component [av]\n'}
+[2.682289] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common4-av -- found version 4.7.0\n'}
+[2.683875] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common4-av\n'}
+[2.692083] (ros_gz_example_gazebo) StdoutLine: {'line': b"-- Checking for module 'libswscale'\n"}
+[2.712224] (ros_gz_example_gazebo) StdoutLine: {'line': b'--   Found libswscale, version 5.9.100\n'}
+[2.712386] (-) TimerEvent: {}
+[2.764832] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Found SWSCALE: TRUE  \n'}
+[2.773276] (ros_gz_example_gazebo) StdoutLine: {'line': b"-- Checking for module 'libavdevice >= 56.4.100'\n"}
+[2.791835] (ros_gz_example_gazebo) StdoutLine: {'line': b'--   Found libavdevice , version 58.13.100\n'}
+[2.812492] (-) TimerEvent: {}
+[2.839254] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Found AVDEVICE: TRUE (Required is at least version "56.4.100") \n'}
+[2.849370] (ros_gz_example_gazebo) StdoutLine: {'line': b"-- Checking for module 'libavformat'\n"}
+[2.878930] (ros_gz_example_gazebo) StdoutLine: {'line': b'--   Found libavformat, version 58.76.100\n'}
+[2.912588] (-) TimerEvent: {}
+[2.927239] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Found AVFORMAT: TRUE  \n'}
+[2.937253] (ros_gz_example_gazebo) StdoutLine: {'line': b"-- Checking for module 'libavcodec'\n"}
+[2.972309] (ros_gz_example_gazebo) StdoutLine: {'line': b'--   Found libavcodec, version 58.134.100\n'}
+[3.012688] (-) TimerEvent: {}
+[3.022925] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Found AVCODEC: TRUE  \n'}
+[3.036283] (ros_gz_example_gazebo) StdoutLine: {'line': b"-- Checking for module 'libavutil'\n"}
+[3.052810] (ros_gz_example_gazebo) StdoutLine: {'line': b'--   Found libavutil, version 56.70.100\n'}
+[3.096641] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Found AVUTIL: TRUE  \n'}
+[3.108033] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools7 -- found version 7.3.1\n'}
+[3.108654] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools7\n'}
+[3.112785] (-) TimerEvent: {}
+[3.213081] (-) TimerEvent: {}
+[3.313448] (-) TimerEvent: {}
+[3.318109] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[3.342160] (ros_gz_example_gazebo) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[3.369446] (ros_gz_example_gazebo) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[3.413548] (-) TimerEvent: {}
+[3.417240] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[3.430130] (ros_gz_example_gazebo) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[3.475938] (ros_gz_example_gazebo) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[3.516247] (-) TimerEvent: {}
+[3.579930] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[3.580162] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common4 -- found version 4.7.0\n'}
+[3.580479] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[3.580999] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs8 -- found version 8.7.0\n'}
+[3.597652] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-gui6 -- found version 6.8.0\n'}
+[3.598304] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-gui6\n'}
+[3.616345] (-) TimerEvent: {}
+[3.696128] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[3.697216] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common4 -- found version 4.7.0\n'}
+[3.697406] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-plugin1 -- found version 1.4.0\n'}
+[3.702487] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-transport11 -- found version 11.4.1\n'}
+[3.711662] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-rendering6 -- found version 6.6.3\n'}
+[3.711833] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-rendering6\n'}
+[3.712102] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[3.712737] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[3.712910] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <ignition-math6> component [eigen3]\n'}
+[3.716444] (-) TimerEvent: {}
+[3.725381] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6-eigen3 -- found version 6.15.1\n'}
+[3.725552] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6-eigen3\n'}
+[3.753887] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common4 -- found version 4.7.0\n'}
+[3.754629] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common4\n'}
+[3.756829] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[3.756936] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[3.781774] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <ignition-common4> component [graphics]\n'}
+[3.790854] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common4-graphics -- found version 4.7.0\n'}
+[3.792017] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common4-graphics\n'}
+[3.792245] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[3.794246] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-utils1 -- found version 1.5.1\n'}
+[3.796629] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <ignition-common4> component [events]\n'}
+[3.797850] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-plugin1 -- found version 1.4.0\n'}
+[3.798585] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-plugin1\n'}
+[3.798733] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <ignition-plugin1> component [all]\n'}
+[3.804097] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for all libraries of ignition-plugin1 -- found version 1.4.0\n'}
+[3.804979] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-plugin1 -- found version 1.4.0\n'}
+[3.816677] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs8 -- found version 8.7.0\n'}
+[3.816847] (-) TimerEvent: {}
+[3.910132] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-physics5 -- found version 5.3.2\n'}
+[3.911842] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-physics5\n'}
+[3.912084] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[3.912451] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-plugin1 -- found version 1.4.0\n'}
+[3.915880] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-utils1 -- found version 1.5.1\n'}
+[3.916950] (-) TimerEvent: {}
+[3.918991] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <ignition-physics5> component [heightmap]\n'}
+[3.929000] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-physics5-heightmap -- found version 5.3.2\n'}
+[3.929803] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-physics5-heightmap\n'}
+[3.929948] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common4 -- found version 4.7.0\n'}
+[3.932905] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <ignition-physics5> component [mesh]\n'}
+[3.944044] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-physics5-mesh -- found version 5.3.2\n'}
+[3.944778] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-physics5-mesh\n'}
+[3.945945] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common4 -- found version 4.7.0\n'}
+[3.946165] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <ignition-physics5> component [sdf]\n'}
+[3.957254] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-physics5-sdf -- found version 5.3.2\n'}
+[3.957932] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-physics5-sdf\n'}
+[3.963294] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for sdformat12 -- found version 12.8.0\n'}
+[3.973102] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-sensors6 -- found version 6.8.0\n'}
+[3.973726] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6\n'}
+[4.017095] (-) TimerEvent: {}
+[4.042864] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[4.046418] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[4.047746] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-common4 -- found version 4.7.0\n'}
+[4.047983] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-transport11 -- found version 11.4.1\n'}
+[4.052190] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-rendering6 -- found version 6.6.3\n'}
+[4.053219] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-msgs8 -- found version 8.7.0\n'}
+[4.053558] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for sdformat12 -- found version 12.8.0\n'}
+[4.057471] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [air_pressure]\n'}
+[4.069739] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-sensors6-air_pressure -- found version 6.8.0\n'}
+[4.069960] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-air_pressure\n'}
+[4.073683] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [altimeter]\n'}
+[4.082651] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-sensors6-altimeter -- found version 6.8.0\n'}
+[4.082890] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-altimeter\n'}
+[4.084657] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [imu]\n'}
+[4.096703] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-sensors6-imu -- found version 6.8.0\n'}
+[4.098248] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-imu\n'}
+[4.103266] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [force_torque]\n'}
+[4.113576] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-sensors6-force_torque -- found version 6.8.0\n'}
+[4.114251] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-force_torque\n'}
+[4.115175] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [logical_camera]\n'}
+[4.117203] (-) TimerEvent: {}
+[4.126997] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-sensors6-logical_camera -- found version 6.8.0\n'}
+[4.128071] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-logical_camera\n'}
+[4.128703] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [magnetometer]\n'}
+[4.139678] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-sensors6-magnetometer -- found version 6.8.0\n'}
+[4.139870] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-magnetometer\n'}
+[4.143194] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [navsat]\n'}
+[4.152955] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-sensors6-navsat -- found version 6.8.0\n'}
+[4.153123] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-navsat\n'}
+[4.156160] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [rendering]\n'}
+[4.162070] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-sensors6-rendering -- found version 6.8.0\n'}
+[4.162767] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-rendering\n'}
+[4.166121] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [lidar]\n'}
+[4.175129] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-sensors6-lidar -- found version 6.8.0\n'}
+[4.175359] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-lidar\n'}
+[4.175624] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-sensors6 -- found version 6.8.0\n'}
+[4.178132] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [gpu_lidar]\n'}
+[4.190096] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-sensors6-gpu_lidar -- found version 6.8.0\n'}
+[4.190524] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-gpu_lidar\n'}
+[4.191996] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-sensors6 -- found version 6.8.0\n'}
+[4.195016] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [camera]\n'}
+[4.200609] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-sensors6-camera -- found version 6.8.0\n'}
+[4.200770] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-camera\n'}
+[4.200893] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-sensors6 -- found version 6.8.0\n'}
+[4.203100] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [boundingbox_camera]\n'}
+[4.211208] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-sensors6-boundingbox_camera -- found version 6.8.0\n'}
+[4.212228] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-boundingbox_camera\n'}
+[4.214142] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [segmentation_camera]\n'}
+[4.218243] (-) TimerEvent: {}
+[4.222976] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-sensors6-segmentation_camera -- found version 6.8.0\n'}
+[4.223137] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-segmentation_camera\n'}
+[4.227641] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [depth_camera]\n'}
+[4.235785] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-sensors6-depth_camera -- found version 6.8.0\n'}
+[4.235946] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-depth_camera\n'}
+[4.236202] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-sensors6 -- found version 6.8.0\n'}
+[4.240153] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [rgbd_camera]\n'}
+[4.247355] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-sensors6-rgbd_camera -- found version 6.8.0\n'}
+[4.249705] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-rgbd_camera\n'}
+[4.249932] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-sensors6 -- found version 6.8.0\n'}
+[4.250893] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for <ignition-sensors6> component [thermal_camera]\n'}
+[4.259802] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-sensors6-thermal_camera -- found version 6.8.0\n'}
+[4.260413] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Searching for dependencies of ignition-sensors6-thermal_camera\n'}
+[4.262259] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-sensors6 -- found version 6.8.0\n'}
+[4.265338] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-rendering6 -- found version 6.6.3\n'}
+[4.265839] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[4.276066] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Looking for ignition-utils1 -- found version 1.5.1\n'}
+[4.318341] (-) TimerEvent: {}
+[4.321487] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[4.420243] (-) TimerEvent: {}
+[4.427017] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.440994] (hardware_link2) StdoutLine: {'line': b'[ 55%] \x1b[32m\x1b[1mLinking CXX static library libgmock_main.a\x1b[0m\n'}
+[4.468586] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Generating done\n'}
+[4.469848] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Build files have been written to: /root/data/project_ws/build/ros_gz_example_gazebo\n'}
+[4.493401] (ros_gz_example_gazebo) CommandEnded: {'returncode': 0}
+[4.493766] (ros_gz_example_gazebo) JobProgress: {'identifier': 'ros_gz_example_gazebo', 'progress': 'build'}
+[4.493800] (ros_gz_example_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/data/project_ws/build/ros_gz_example_gazebo', '--', '-j4', '-l4'], 'cwd': '/root/data/project_ws/build/ros_gz_example_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'yulian-Inspiron-7577'), ('IGNITION_VERSION', 'fortress'), ('__GLX_VENDOR_LIBRARY_NAME', 'nvidia'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu:/usr/lib/i386-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64'), ('HOME', '/root'), ('OLDPWD', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLORTERM', 'truecolor'), ('IS_SIM', 'True'), ('ROS_DISTRO', 'humble'), ('_', '/usr/local/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics,compat32,utility,display'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('__NV_PRIME_RENDER_OFFLOAD', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/data/project_ws/install/ros_gz_example_description:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('TERMINATOR_UUID', 'urn:uuid:5b0082e2-52bb-4ce8-b6f2-92c60a710a01'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IGN_GAZEBO_RESOURCE_PATH', '/root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/models'), ('PWD', '/root/data/project_ws/build/ros_gz_example_gazebo'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', '0'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/root/data/project_ws/install/ros_gz_example_description:/opt/ros/humble')]), 'shell': False}
+[4.522889] (-) TimerEvent: {}
+[4.532236] (hardware_link2) StdoutLine: {'line': b'[ 55%] Built target gmock_main\n'}
+[4.582711] (ros_gz_example_gazebo) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/FullSystem.dir/src/FullSystem.cc.o\x1b[0m\n'}
+[4.599961] (ros_gz_example_gazebo) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/BasicSystem.dir/src/BasicSystem.cc.o\x1b[0m\n'}
+[4.630263] (-) TimerEvent: {}
+[4.735281] (-) TimerEvent: {}
+[4.835726] (-) TimerEvent: {}
+[4.936085] (-) TimerEvent: {}
+[5.036479] (-) TimerEvent: {}
+[5.140257] (-) TimerEvent: {}
+[5.240555] (-) TimerEvent: {}
+[5.340922] (-) TimerEvent: {}
+[5.441241] (-) TimerEvent: {}
+[5.541617] (-) TimerEvent: {}
+[5.641909] (-) TimerEvent: {}
+[5.742646] (-) TimerEvent: {}
+[5.843172] (-) TimerEvent: {}
+[5.943569] (-) TimerEvent: {}
+[6.045165] (-) TimerEvent: {}
+[6.147600] (-) TimerEvent: {}
+[6.249276] (-) TimerEvent: {}
+[6.349894] (-) TimerEvent: {}
+[6.450194] (-) TimerEvent: {}
+[6.550788] (-) TimerEvent: {}
+[6.570624] (hardware_link2) StderrLine: {'line': b'\x1b[01m\x1b[K/root/data/project_ws/src/hardware_link2/src/hardware_link2.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual hardware_interface::return_type hardware_link2::HardwareLinkInterface::read(const rclcpp::Time&, const rclcpp::Duration&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.571276] (hardware_link2) StderrLine: {'line': b'\x1b[01m\x1b[K/root/data/project_ws/src/hardware_link2/src/hardware_link2.cpp:252:40:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstatement has no effect [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value\x07-Wunused-value\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.571419] (hardware_link2) StderrLine: {'line': b'  252 |       \x1b[01;35m\x1b[Khardware_interface::return_type::ERROR\x1b[m\x1b[K;\n'}
+[6.571495] (hardware_link2) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[6.572564] (hardware_link2) StderrLine: {'line': b'\x1b[01m\x1b[K/root/data/project_ws/src/hardware_link2/src/hardware_link2.cpp:322:42:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstatement has no effect [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value\x07-Wunused-value\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.572758] (hardware_link2) StderrLine: {'line': b'  322 |         \x1b[01;35m\x1b[Khardware_interface::return_type::ERROR\x1b[m\x1b[K;\n'}
+[6.572834] (hardware_link2) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[6.574423] (hardware_link2) StderrLine: {'line': b'\x1b[01m\x1b[K/root/data/project_ws/src/hardware_link2/src/hardware_link2.cpp:328:10:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Ksizep\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.574659] (hardware_link2) StderrLine: {'line': b'  328 |     auto \x1b[01;35m\x1b[Ksizep\x1b[m\x1b[K = read_buffer(buf_echo, sizeof(buf_echo));\n'}
+[6.574766] (hardware_link2) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[6.574846] (hardware_link2) StderrLine: {'line': b'\x1b[01m\x1b[K/root/data/project_ws/src/hardware_link2/src/hardware_link2.cpp:333:10:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Ksize\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.574927] (hardware_link2) StderrLine: {'line': b'  333 |     auto \x1b[01;35m\x1b[Ksize\x1b[m\x1b[K = read_buffer(buf_res, sizeof(buf_res));\n'}
+[6.575000] (hardware_link2) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[6.575073] (hardware_link2) StderrLine: {'line': b'\x1b[01m\x1b[K/root/data/project_ws/src/hardware_link2/src/hardware_link2.cpp:338:10:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Ksizet\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.575150] (hardware_link2) StderrLine: {'line': b'  338 |     auto \x1b[01;35m\x1b[Ksizet\x1b[m\x1b[K = read_buffer(buf_ok, sizeof(buf_ok));\n'}
+[6.575276] (hardware_link2) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[6.575341] (hardware_link2) StderrLine: {'line': b'\x1b[01m\x1b[K/root/data/project_ws/src/hardware_link2/src/hardware_link2.cpp:258:8:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Ksizep\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.575489] (hardware_link2) StderrLine: {'line': b'  258 |   auto \x1b[01;35m\x1b[Ksizep\x1b[m\x1b[K = read_buffer(bufp, sizeof(bufp));\n'}
+[6.575552] (hardware_link2) StderrLine: {'line': b'      |        \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[6.575612] (hardware_link2) StderrLine: {'line': b'\x1b[01m\x1b[K/root/data/project_ws/src/hardware_link2/src/hardware_link2.cpp:263:8:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Ksize\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.576323] (hardware_link2) StderrLine: {'line': b'  263 |   auto \x1b[01;35m\x1b[Ksize\x1b[m\x1b[K = read_buffer(buf, sizeof(buf));\n'}
+[6.576499] (hardware_link2) StderrLine: {'line': b'      |        \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[6.576570] (hardware_link2) StderrLine: {'line': b'\x1b[01m\x1b[K/root/data/project_ws/src/hardware_link2/src/hardware_link2.cpp:268:8:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Ksizet\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.576652] (hardware_link2) StderrLine: {'line': b'  268 |   auto \x1b[01;35m\x1b[Ksizet\x1b[m\x1b[K = read_buffer(buft, sizeof(buft));\n'}
+[6.576725] (hardware_link2) StderrLine: {'line': b'      |        \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[6.576818] (hardware_link2) StderrLine: {'line': b'\x1b[01m\x1b[K/root/data/project_ws/src/hardware_link2/src/hardware_link2.cpp:236:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktime\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.576897] (hardware_link2) StderrLine: {'line': b'  236 |   \x1b[01;35m\x1b[Kconst rclcpp::Time & time\x1b[m\x1b[K /*time*/, const rclcpp::Duration & period/*period*/)\n'}
+[6.576969] (hardware_link2) StderrLine: {'line': b'      |   \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[6.577040] (hardware_link2) StderrLine: {'line': b'\x1b[01m\x1b[K/root/data/project_ws/src/hardware_link2/src/hardware_link2.cpp:236:64:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kperiod\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.577119] (hardware_link2) StderrLine: {'line': b'  236 | onst rclcpp::Time & time /*time*/, \x1b[01;35m\x1b[Kconst rclcpp::Duration & period\x1b[m\x1b[K/*period*/)\n'}
+[6.577223] (hardware_link2) StderrLine: {'line': b'      |                                    \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[6.577289] (hardware_link2) StderrLine: {'line': b'\n'}
+[6.577348] (hardware_link2) StderrLine: {'line': b'\x1b[01m\x1b[K/root/data/project_ws/src/hardware_link2/src/hardware_link2.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual hardware_interface::return_type hardware_link2::HardwareLinkInterface::write(const rclcpp::Time&, const rclcpp::Duration&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.577409] (hardware_link2) StderrLine: {'line': b'\x1b[01m\x1b[K/root/data/project_ws/src/hardware_link2/src/hardware_link2.cpp:388:40:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kstatement has no effect [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value\x07-Wunused-value\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.577476] (hardware_link2) StderrLine: {'line': b'  388 |       \x1b[01;35m\x1b[Khardware_interface::return_type::ERROR\x1b[m\x1b[K;\n'}
+[6.577535] (hardware_link2) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~\x1b[m\x1b[K\n'}
+[6.579508] (hardware_link2) StderrLine: {'line': b'\x1b[01m\x1b[K/root/data/project_ws/src/hardware_link2/src/hardware_link2.cpp:392:8:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Ksizep\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.579692] (hardware_link2) StderrLine: {'line': b'  392 |   auto \x1b[01;35m\x1b[Ksizep\x1b[m\x1b[K = read_buffer(bufp, sizeof(bufp));\n'}
+[6.579778] (hardware_link2) StderrLine: {'line': b'      |        \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[6.579951] (hardware_link2) StderrLine: {'line': b'\x1b[01m\x1b[K/root/data/project_ws/src/hardware_link2/src/hardware_link2.cpp:396:8:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Ksizeok\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.580023] (hardware_link2) StderrLine: {'line': b'  396 |   auto \x1b[01;35m\x1b[Ksizeok\x1b[m\x1b[K = read_buffer(bufok, sizeof(bufok));\n'}
+[6.580086] (hardware_link2) StderrLine: {'line': b'      |        \x1b[01;35m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[6.653260] (-) TimerEvent: {}
+[6.753533] (-) TimerEvent: {}
+[6.853895] (-) TimerEvent: {}
+[6.955825] (-) TimerEvent: {}
+[7.056097] (-) TimerEvent: {}
+[7.156401] (-) TimerEvent: {}
+[7.256682] (-) TimerEvent: {}
+[7.356948] (-) TimerEvent: {}
+[7.457236] (-) TimerEvent: {}
+[7.558239] (-) TimerEvent: {}
+[7.658509] (-) TimerEvent: {}
+[7.681471] (hardware_link2) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX static library libgmock.a\x1b[0m\n'}
+[7.759880] (-) TimerEvent: {}
+[7.771642] (hardware_link2) StdoutLine: {'line': b'[ 66%] Built target gmock\n'}
+[7.803571] (hardware_link2) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/test_hardware_link2.dir/test/test_hardware_link2.cpp.o\x1b[0m\n'}
+[7.860618] (-) TimerEvent: {}
+[7.960917] (-) TimerEvent: {}
+[8.061197] (-) TimerEvent: {}
+[8.163232] (-) TimerEvent: {}
+[8.164679] (hardware_link2) StdoutLine: {'line': b'[ 88%] \x1b[32m\x1b[1mLinking CXX shared library libhardware_link2.so\x1b[0m\n'}
+[8.263449] (-) TimerEvent: {}
+[8.366034] (-) TimerEvent: {}
+[8.469479] (-) TimerEvent: {}
+[8.475727] (hardware_link2) StdoutLine: {'line': b'[ 88%] Built target hardware_link2\n'}
+[8.571523] (-) TimerEvent: {}
+[8.671842] (-) TimerEvent: {}
+[8.772193] (-) TimerEvent: {}
+[8.872539] (-) TimerEvent: {}
+[8.972792] (-) TimerEvent: {}
+[9.073250] (-) TimerEvent: {}
+[9.173518] (-) TimerEvent: {}
+[9.275259] (-) TimerEvent: {}
+[9.377223] (-) TimerEvent: {}
+[9.477651] (-) TimerEvent: {}
+[9.578179] (-) TimerEvent: {}
+[9.678480] (-) TimerEvent: {}
+[9.778766] (-) TimerEvent: {}
+[9.879339] (-) TimerEvent: {}
+[9.979980] (-) TimerEvent: {}
+[10.062699] (hardware_link2) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable test_hardware_link2\x1b[0m\n'}
+[10.080240] (-) TimerEvent: {}
+[10.145229] (ros_gz_example_gazebo) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX shared library libBasicSystem.so\x1b[0m\n'}
+[10.180507] (-) TimerEvent: {}
+[10.281345] (-) TimerEvent: {}
+[10.382600] (-) TimerEvent: {}
+[10.471180] (hardware_link2) StdoutLine: {'line': b'[100%] Built target test_hardware_link2\n'}
+[10.482750] (-) TimerEvent: {}
+[10.488698] (hardware_link2) CommandEnded: {'returncode': 0}
+[10.490180] (ros_gz_example_gazebo) StdoutLine: {'line': b'[ 75%] Built target BasicSystem\n'}
+[10.529313] (hardware_link2) JobProgress: {'identifier': 'hardware_link2', 'progress': 'install'}
+[10.530158] (hardware_link2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/data/project_ws/build/hardware_link2'], 'cwd': '/root/data/project_ws/build/hardware_link2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'yulian-Inspiron-7577'), ('IGNITION_VERSION', 'fortress'), ('__GLX_VENDOR_LIBRARY_NAME', 'nvidia'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu:/usr/lib/i386-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64'), ('HOME', '/root'), ('OLDPWD', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLORTERM', 'truecolor'), ('IS_SIM', 'True'), ('ROS_DISTRO', 'humble'), ('_', '/usr/local/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics,compat32,utility,display'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('__NV_PRIME_RENDER_OFFLOAD', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('TERMINATOR_UUID', 'urn:uuid:5b0082e2-52bb-4ce8-b6f2-92c60a710a01'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/root/data/project_ws/build/hardware_link2'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', '0'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[10.539223] (hardware_link2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.539494] (hardware_link2) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/hardware_link2/share/hardware_link2/hardware_link2.xml\n'}
+[10.539661] (hardware_link2) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/hardware_link2/lib/libhardware_link2.so\n'}
+[10.540849] (hardware_link2) StdoutLine: {'line': b'-- Set runtime path of "/root/data/project_ws/install/hardware_link2/lib/libhardware_link2.so" to ""\n'}
+[10.541110] (hardware_link2) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/hardware_link2/include\n'}
+[10.541371] (hardware_link2) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/hardware_link2/include/hardware_link2\n'}
+[10.541494] (hardware_link2) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/hardware_link2/include/hardware_link2/visibility_control.h\n'}
+[10.541676] (hardware_link2) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/hardware_link2/include/hardware_link2/hardware_link2.hpp\n'}
+[10.541828] (hardware_link2) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/hardware_link2/share/hardware_link2/environment/library_path.sh\n'}
+[10.541966] (hardware_link2) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/hardware_link2/share/hardware_link2/environment/library_path.dsv\n'}
+[10.542175] (hardware_link2) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/hardware_link2/share/ament_index/resource_index/package_run_dependencies/hardware_link2\n'}
+[10.542737] (hardware_link2) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/hardware_link2/share/ament_index/resource_index/parent_prefix_path/hardware_link2\n'}
+[10.542901] (hardware_link2) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/hardware_link2/share/hardware_link2/environment/ament_prefix_path.sh\n'}
+[10.543015] (hardware_link2) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/hardware_link2/share/hardware_link2/environment/ament_prefix_path.dsv\n'}
+[10.543150] (hardware_link2) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/hardware_link2/share/hardware_link2/environment/path.sh\n'}
+[10.543427] (hardware_link2) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/hardware_link2/share/hardware_link2/environment/path.dsv\n'}
+[10.543592] (hardware_link2) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/hardware_link2/share/hardware_link2/local_setup.bash\n'}
+[10.543834] (hardware_link2) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/hardware_link2/share/hardware_link2/local_setup.sh\n'}
+[10.543994] (hardware_link2) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/hardware_link2/share/hardware_link2/local_setup.zsh\n'}
+[10.544137] (hardware_link2) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/hardware_link2/share/hardware_link2/local_setup.dsv\n'}
+[10.544296] (hardware_link2) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/hardware_link2/share/hardware_link2/package.dsv\n'}
+[10.544493] (hardware_link2) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/hardware_link2/share/ament_index/resource_index/packages/hardware_link2\n'}
+[10.544734] (hardware_link2) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/hardware_link2/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/hardware_link2\n'}
+[10.544917] (hardware_link2) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/hardware_link2/share/hardware_link2/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[10.545054] (hardware_link2) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/hardware_link2/share/hardware_link2/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[10.545313] (hardware_link2) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/hardware_link2/share/hardware_link2/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[10.545480] (hardware_link2) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/hardware_link2/share/hardware_link2/cmake/hardware_link2Config.cmake\n'}
+[10.545625] (hardware_link2) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/hardware_link2/share/hardware_link2/cmake/hardware_link2Config-version.cmake\n'}
+[10.545791] (hardware_link2) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/hardware_link2/share/hardware_link2/package.xml\n'}
+[10.548091] (hardware_link2) CommandEnded: {'returncode': 0}
+[10.582849] (-) TimerEvent: {}
+[10.611633] (hardware_link2) JobEnded: {'identifier': 'hardware_link2', 'rc': 0}
+[10.682980] (-) TimerEvent: {}
+[10.733334] (ros_gz_example_gazebo) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libFullSystem.so\x1b[0m\n'}
+[10.783108] (-) TimerEvent: {}
+[10.883607] (-) TimerEvent: {}
+[10.983918] (-) TimerEvent: {}
+[11.027976] (ros_gz_example_gazebo) StdoutLine: {'line': b'[100%] Built target FullSystem\n'}
+[11.041428] (ros_gz_example_gazebo) CommandEnded: {'returncode': 0}
+[11.076232] (ros_gz_example_gazebo) JobProgress: {'identifier': 'ros_gz_example_gazebo', 'progress': 'install'}
+[11.077147] (ros_gz_example_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/data/project_ws/build/ros_gz_example_gazebo'], 'cwd': '/root/data/project_ws/build/ros_gz_example_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'yulian-Inspiron-7577'), ('IGNITION_VERSION', 'fortress'), ('__GLX_VENDOR_LIBRARY_NAME', 'nvidia'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu:/usr/lib/i386-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64'), ('HOME', '/root'), ('OLDPWD', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLORTERM', 'truecolor'), ('IS_SIM', 'True'), ('ROS_DISTRO', 'humble'), ('_', '/usr/local/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics,compat32,utility,display'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('__NV_PRIME_RENDER_OFFLOAD', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/data/project_ws/install/ros_gz_example_description:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('TERMINATOR_UUID', 'urn:uuid:5b0082e2-52bb-4ce8-b6f2-92c60a710a01'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IGN_GAZEBO_RESOURCE_PATH', '/root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/models'), ('PWD', '/root/data/project_ws/build/ros_gz_example_gazebo'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', '0'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/root/data/project_ws/install/ros_gz_example_description:/opt/ros/humble')]), 'shell': False}
+[11.084027] (-) TimerEvent: {}
+[11.086007] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[11.086288] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_gazebo/lib/ros_gz_example_gazebo/libBasicSystem.so\n'}
+[11.087894] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_gazebo/lib/ros_gz_example_gazebo/libFullSystem.so\n'}
+[11.089415] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/worlds\n'}
+[11.089674] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/worlds/diff_drive.sdf\n'}
+[11.089891] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/environment/ros_gz_example_gazebo.dsv\n'}
+[11.090092] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/environment/ros_gz_example_gazebo.sh\n'}
+[11.090471] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_gazebo/share/ament_index/resource_index/package_run_dependencies/ros_gz_example_gazebo\n'}
+[11.090720] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_gazebo/share/ament_index/resource_index/parent_prefix_path/ros_gz_example_gazebo\n'}
+[11.090975] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/environment/ament_prefix_path.sh\n'}
+[11.091169] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/environment/ament_prefix_path.dsv\n'}
+[11.091603] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/environment/path.sh\n'}
+[11.091849] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/environment/path.dsv\n'}
+[11.092047] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/local_setup.bash\n'}
+[11.092174] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/local_setup.sh\n'}
+[11.092403] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/local_setup.zsh\n'}
+[11.092841] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/local_setup.dsv\n'}
+[11.092952] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/package.dsv\n'}
+[11.093290] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_gazebo/share/ament_index/resource_index/packages/ros_gz_example_gazebo\n'}
+[11.093395] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/cmake/ros_gz_example_gazeboConfig.cmake\n'}
+[11.093539] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/cmake/ros_gz_example_gazeboConfig-version.cmake\n'}
+[11.093664] (ros_gz_example_gazebo) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/package.xml\n'}
+[11.096412] (ros_gz_example_gazebo) CommandEnded: {'returncode': 0}
+[11.147491] (ros_gz_example_gazebo) JobEnded: {'identifier': 'ros_gz_example_gazebo', 'rc': 0}
+[11.148040] (ros_gz_example_bringup) JobStarted: {'identifier': 'ros_gz_example_bringup'}
+[11.156413] (ros_gz_example_bringup) JobProgress: {'identifier': 'ros_gz_example_bringup', 'progress': 'cmake'}
+[11.156714] (ros_gz_example_bringup) Command: {'cmd': ['/usr/bin/cmake', '/root/data/project_ws/src/ros_gz_example_bringup', '-DBUILD_TESTING=ON', '-DCMAKE_INSTALL_PREFIX=/root/data/project_ws/install/ros_gz_example_bringup'], 'cwd': '/root/data/project_ws/build/ros_gz_example_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'yulian-Inspiron-7577'), ('IGNITION_VERSION', 'fortress'), ('__GLX_VENDOR_LIBRARY_NAME', 'nvidia'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu:/usr/lib/i386-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64'), ('HOME', '/root'), ('OLDPWD', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLORTERM', 'truecolor'), ('IS_SIM', 'True'), ('ROS_DISTRO', 'humble'), ('_', '/usr/local/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics,compat32,utility,display'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('__NV_PRIME_RENDER_OFFLOAD', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/data/project_ws/install/ros_gz_example_gazebo:/root/data/project_ws/install/ros_gz_example_description:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('TERMINATOR_UUID', 'urn:uuid:5b0082e2-52bb-4ce8-b6f2-92c60a710a01'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IGN_GAZEBO_RESOURCE_PATH', '/root/data/project_ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/worlds:/root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/models'), ('IGN_GAZEBO_PLUGIN_PATH', '/root/data/project_ws/install/ros_gz_example_gazebo/lib/ros_gz_example_gazebo'), ('PWD', '/root/data/project_ws/build/ros_gz_example_bringup'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', '0'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/root/data/project_ws/install/ros_gz_example_gazebo:/root/data/project_ws/install/ros_gz_example_description:/opt/ros/humble')]), 'shell': False}
+[11.184122] (-) TimerEvent: {}
+[11.225982] (ros_gz_example_bringup) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[11.284286] (-) TimerEvent: {}
+[11.294978] (ros_gz_example_bringup) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[11.303645] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[11.384412] (-) TimerEvent: {}
+[11.387896] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[11.397020] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[11.397349] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[11.397835] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[11.401218] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[11.484511] (-) TimerEvent: {}
+[11.496582] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[11.505663] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[11.506015] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[11.506638] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[11.511416] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[11.584601] (-) TimerEvent: {}
+[11.684847] (-) TimerEvent: {}
+[11.696038] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[11.784974] (-) TimerEvent: {}
+[11.817698] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Found ros_gz_example_description: 0.0.0 (/root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/cmake)\n'}
+[11.818181] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Found ros_gz_example_gazebo: 0.0.0 (/root/data/project_ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/cmake)\n'}
+[11.821048] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[11.885114] (-) TimerEvent: {}
+[11.901558] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Configuring done\n'}
+[11.904670] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Generating done\n'}
+[11.905657] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Build files have been written to: /root/data/project_ws/build/ros_gz_example_bringup\n'}
+[11.910324] (ros_gz_example_bringup) CommandEnded: {'returncode': 0}
+[11.910872] (ros_gz_example_bringup) JobProgress: {'identifier': 'ros_gz_example_bringup', 'progress': 'build'}
+[11.911263] (ros_gz_example_bringup) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/data/project_ws/build/ros_gz_example_bringup', '--', '-j4', '-l4'], 'cwd': '/root/data/project_ws/build/ros_gz_example_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'yulian-Inspiron-7577'), ('IGNITION_VERSION', 'fortress'), ('__GLX_VENDOR_LIBRARY_NAME', 'nvidia'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu:/usr/lib/i386-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64'), ('HOME', '/root'), ('OLDPWD', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLORTERM', 'truecolor'), ('IS_SIM', 'True'), ('ROS_DISTRO', 'humble'), ('_', '/usr/local/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics,compat32,utility,display'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('__NV_PRIME_RENDER_OFFLOAD', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/data/project_ws/install/ros_gz_example_gazebo:/root/data/project_ws/install/ros_gz_example_description:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('TERMINATOR_UUID', 'urn:uuid:5b0082e2-52bb-4ce8-b6f2-92c60a710a01'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IGN_GAZEBO_RESOURCE_PATH', '/root/data/project_ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/worlds:/root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/models'), ('IGN_GAZEBO_PLUGIN_PATH', '/root/data/project_ws/install/ros_gz_example_gazebo/lib/ros_gz_example_gazebo'), ('PWD', '/root/data/project_ws/build/ros_gz_example_bringup'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', '0'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/root/data/project_ws/install/ros_gz_example_gazebo:/root/data/project_ws/install/ros_gz_example_description:/opt/ros/humble')]), 'shell': False}
+[11.959054] (ros_gz_example_bringup) CommandEnded: {'returncode': 0}
+[11.984919] (ros_gz_example_bringup) JobProgress: {'identifier': 'ros_gz_example_bringup', 'progress': 'install'}
+[11.985172] (ros_gz_example_bringup) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/data/project_ws/build/ros_gz_example_bringup'], 'cwd': '/root/data/project_ws/build/ros_gz_example_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'yulian-Inspiron-7577'), ('IGNITION_VERSION', 'fortress'), ('__GLX_VENDOR_LIBRARY_NAME', 'nvidia'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu:/usr/lib/i386-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64'), ('HOME', '/root'), ('OLDPWD', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLORTERM', 'truecolor'), ('IS_SIM', 'True'), ('ROS_DISTRO', 'humble'), ('_', '/usr/local/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics,compat32,utility,display'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('__NV_PRIME_RENDER_OFFLOAD', '1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/data/project_ws/install/ros_gz_example_gazebo:/root/data/project_ws/install/ros_gz_example_description:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('TERMINATOR_UUID', 'urn:uuid:5b0082e2-52bb-4ce8-b6f2-92c60a710a01'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IGN_GAZEBO_RESOURCE_PATH', '/root/data/project_ws/install/ros_gz_example_gazebo/share/ros_gz_example_gazebo/worlds:/root/data/project_ws/install/ros_gz_example_description/share/ros_gz_example_description/models'), ('IGN_GAZEBO_PLUGIN_PATH', '/root/data/project_ws/install/ros_gz_example_gazebo/lib/ros_gz_example_gazebo'), ('PWD', '/root/data/project_ws/build/ros_gz_example_bringup'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('NVIDIA_VISIBLE_DEVICES', '0'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/root/data/project_ws/install/ros_gz_example_gazebo:/root/data/project_ws/install/ros_gz_example_description:/opt/ros/humble')]), 'shell': False}
+[11.986232] (-) TimerEvent: {}
+[11.994826] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[11.995056] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/launch\n'}
+[11.995142] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/launch/diff_drive.launch.py\n'}
+[11.995366] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/config\n'}
+[11.995513] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/config/diff_drive_old.rviz\n'}
+[11.995601] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/config/imu_filter.yaml\n'}
+[11.995741] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/config/diff_drive.rviz\n'}
+[11.995965] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/config/joy-params.yaml\n'}
+[11.996107] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/config/my_map2.pgm\n'}
+[11.996282] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/config/diff_drive_controller_velocity.yaml\n'}
+[11.996484] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/config/ros_gz_example_bridge.yaml\n'}
+[11.996732] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/config/nav2_params.yaml\n'}
+[11.996860] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/config/ps3.config.yaml\n'}
+[11.996975] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/config/mapper_params_online_async.yaml\n'}
+[11.997089] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/config/rrbot.rviz\n'}
+[11.997182] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/config/ekf.yaml\n'}
+[11.997286] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/config/my_map2.yaml\n'}
+[11.997449] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/config/camera.yaml\n'}
+[11.997660] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_bringup/share/ament_index/resource_index/package_run_dependencies/ros_gz_example_bringup\n'}
+[11.997986] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_bringup/share/ament_index/resource_index/parent_prefix_path/ros_gz_example_bringup\n'}
+[11.998237] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/environment/ament_prefix_path.sh\n'}
+[11.998543] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/environment/ament_prefix_path.dsv\n'}
+[11.998723] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/environment/path.sh\n'}
+[11.998858] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/environment/path.dsv\n'}
+[11.999033] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/local_setup.bash\n'}
+[11.999179] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/local_setup.sh\n'}
+[11.999428] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/local_setup.zsh\n'}
+[11.999631] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/local_setup.dsv\n'}
+[11.999798] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/package.dsv\n'}
+[11.999914] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_bringup/share/ament_index/resource_index/packages/ros_gz_example_bringup\n'}
+[12.000124] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/cmake/ros_gz_example_bringupConfig.cmake\n'}
+[12.000361] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/cmake/ros_gz_example_bringupConfig-version.cmake\n'}
+[12.000549] (ros_gz_example_bringup) StdoutLine: {'line': b'-- Installing: /root/data/project_ws/install/ros_gz_example_bringup/share/ros_gz_example_bringup/package.xml\n'}
+[12.002783] (ros_gz_example_bringup) CommandEnded: {'returncode': 0}
+[12.044821] (ros_gz_example_bringup) JobEnded: {'identifier': 'ros_gz_example_bringup', 'rc': 0}
+[12.045378] (-) EventReactorShutdown: {}

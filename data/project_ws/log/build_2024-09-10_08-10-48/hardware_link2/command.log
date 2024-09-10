@@ -1,0 +1,6 @@
+Invoking command in '/root/data/project_ws/build/hardware_link2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/data/project_ws/src/hardware_link2 -DBUILD_TESTING=ON -DCMAKE_INSTALL_PREFIX=/root/data/project_ws/install/hardware_link2
+Invoked command in '/root/data/project_ws/build/hardware_link2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/data/project_ws/src/hardware_link2 -DBUILD_TESTING=ON -DCMAKE_INSTALL_PREFIX=/root/data/project_ws/install/hardware_link2
+Invoking command in '/root/data/project_ws/build/hardware_link2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/data/project_ws/build/hardware_link2 -- -j4 -l4
+Invoked command in '/root/data/project_ws/build/hardware_link2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/data/project_ws/build/hardware_link2 -- -j4 -l4
+Invoking command in '/root/data/project_ws/build/hardware_link2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/data/project_ws/build/hardware_link2
+Invoked command in '/root/data/project_ws/build/hardware_link2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/data/project_ws/build/hardware_link2
