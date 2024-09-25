@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'my_package'
+package_name = 'map_process'
 
 setup(
     name=package_name,
@@ -14,13 +14,13 @@ setup(
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='root',
-    maintainer_email='xeedjr@gmail.com',
+    maintainer_email='julian_salo@yahoo.com',
     description='TODO: Package description',
-    license='Apache-2.0',
+    license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'my_node = my_package.my_node:main'
+            'map_process = map_process.map_process:main'
         ],
     },
 )

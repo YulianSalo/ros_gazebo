@@ -203,6 +203,12 @@ def generate_launch_description():
         parameters=[{'use_sim_time': use_sim_time}],
     )
 
+    map_process_node = Node(
+        package='map_process',
+        executable='map_process',
+        output='both',
+    )
+
     diff_drive_spawner = Node(
         package="controller_manager",
         executable="spawner",
@@ -259,7 +265,8 @@ def generate_launch_description():
                     robot_localization,
                     nav2,
                     my_node,
-                    rviz
+                    rviz,
+                    map_process_node,
                 ]
             )
 
